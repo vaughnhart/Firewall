@@ -1,188 +1,135 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fswiss\fcharset0 Helvetica-Bold;
-\f3\fnil\fcharset0 Menlo-Regular;\f4\fswiss\fcharset0 ArialMT;}
-{\colortbl;\red255\green255\blue255;\red253\green139\blue9;\red41\green199\blue50;\red10\green96\blue255;
-\red253\green130\blue8;\red0\green0\blue0;\red123\green123\blue129;\red144\green113\blue76;\red254\green195\blue9;
-\red33\green255\blue255;\red157\green51\blue214;\red252\green33\blue37;\red0\green0\blue0;\red251\green0\blue7;
-\red255\green246\blue0;\red255\green255\blue255;\red16\green60\blue192;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c100000\c61456\c0;\cssrgb\c15686\c80392\c25490\cname systemGreenColor;\cssrgb\c0\c47843\c100000\cname systemBlueColor;
-\cssrgb\c100000\c58431\c0\cname systemOrangeColor;\cssrgb\c0\c0\c0\c84706\cname labelColor;\cssrgb\c55686\c55686\c57647\cname systemGrayColor;\cssrgb\c63529\c51765\c36863\cname systemBrownColor;\cssrgb\c100000\c80000\c0\cname systemYellowColor;
-\cssrgb\c0\c100000\c100000;\cssrgb\c68627\c32157\c87059\cname systemPurpleColor;\cssrgb\c100000\c23137\c18824\cname systemRedColor;\cssrgb\c0\c1\c1;\cssrgb\c100000\c12195\c0;
-\cspthree\c100000\c95881\c0;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c6667\c33333\c80000;\cssrgb\c100000\c100000\c100000;}
-\margl1440\margr1440\vieww27760\viewh16380\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+These firewall rules are based around Cisco Umbrella or OpenDNS Umbrella  Prosumer. 
+https://www.opendns.com/home-internet-security/
+https://docs.umbrella.com/deployment-umbrella/docs/2-prerequisites-update#section-network-access
+You will need a license for Murus Pro… which should bundle Vallum firewall as well.You’ll need them both.  This is a restricted IPv4 only config.
 
-\f0\fs24 \cf0 These firewall rules are based around Cisco Umbrella or OpenDNS Umbrella  Prosumer. \
-{\field{\*\fldinst{HYPERLINK "https://www.opendns.com/home-internet-security/"}}{\fldrslt https://www.opendns.com/home-internet-security/}}\
-{\field{\*\fldinst{HYPERLINK "https://docs.umbrella.com/deployment-umbrella/docs/2-prerequisites-update#section-network-access"}}{\fldrslt https://docs.umbrella.com/deployment-umbrella/docs/2-prerequisites-update#section-network-access}}\
-You will need a license for Murus Pro\'85 which should bundle Vallum firewall as well.You\'92ll need them both.  \cf2 This is a restricted IPv4 only config.\cf0 \
-\
-Guidance\
-{\field{\*\fldinst{HYPERLINK "https://github.com/drduh/macOS-Security-and-Privacy-Guide"}}{\fldrslt https://github.com/drduh/macOS-Security-and-Privacy-Guide}}\
-{\field{\*\fldinst{HYPERLINK "https://github.com/usnistgov/macos_security#readme"}}{\fldrslt https://github.com/usnistgov/macos_security#readme}}\
-{\field{\*\fldinst{HYPERLINK "https://tools.cisco.com/security/center/resources/dns_best_practices"}}{\fldrslt https://tools.cisco.com/security/center/resources/dns_best_practices}}\
-{\field{\*\fldinst{HYPERLINK "https://www.cisco.com/c/en/us/support/docs/ip/access-lists/43920-iacl.html"}}{\fldrslt https://www.cisco.com/c/en/us/support/docs/ip/access-lists/43920-iacl.html}}\
-{\field{\*\fldinst{HYPERLINK "https://csrc.nist.gov/"}}{\fldrslt https://csrc.nist.gov}}\
-{\field{\*\fldinst{HYPERLINK "https://downloads.cisecurity.org/#/"}}{\fldrslt https://downloads.cisecurity.org/#/}}\
-{\field{\*\fldinst{HYPERLINK "https://learn.microsoft.com/en-us/archive/blogs/secguide/"}}{\fldrslt https://learn.microsoft.com/en-us/archive/blogs/secguide/}}\
-{\field{\*\fldinst{HYPERLINK "https://www.brightcloud.com/tools/url-ip-lookup.php"}}{\fldrslt https://www.brightcloud.com/tools/url-ip-lookup.php}}\
-{\field{\*\fldinst{HYPERLINK "https://docs.umbrella.com/deployment-umbrella/docs/domain-management#section-3-internal-queries"}}{\fldrslt https://docs.umbrella.com/deployment-umbrella/docs/domain-management#section-3-internal-queries}}\
-{\field{\*\fldinst{HYPERLINK "https://support.umbrella.com/hc/en-us/articles/115004651426-CNAME-Records-with-DNS-caching-and-Umbrella"}}{\fldrslt https://support.umbrella.com/hc/en-us/articles/115004651426-CNAME-Records-with-DNS-caching-and-Umbrella}}\
-\
-Lists:\
-{\field{\*\fldinst{HYPERLINK "https://iplists.firehol.org/"}}{\fldrslt https://iplists.firehol.org}}\
-{\field{\*\fldinst{HYPERLINK "https://firehol.org/guides/icmpv6-recommendations/#allow-incoming-destination-unreachable-messages-only-for-existing-sessions"}}{\fldrslt https://firehol.org/guides/icmpv6-recommendations/#allow-incoming-destination-unreachable-messages-only-for-existing-sessions}}\
-{\field{\*\fldinst{HYPERLINK "https://www.spamhaus.org/"}}{\fldrslt https://www.spamhaus.org}}\
-{\field{\*\fldinst{HYPERLINK "https://www.talosintelligence.com/"}}{\fldrslt https://www.talosintelligence.com}}\
-{\field{\*\fldinst{HYPERLINK "https://secureupdates.checkpoint.com/IP-list/TOR.txt"}}{\fldrslt https://secureupdates.checkpoint.com/IP-list/TOR.txt}}\
-{\field{\*\fldinst{HYPERLINK "https://www.opendbl.net/"}}{\fldrslt https://www.opendbl.net}}\
-\
-Changelog - 11/18/22\
-\
-Removed allow all apps outbound rule in Vallum  - apps need to be signed.\
-Moved dhcp inbound rule higher in Vallum.\
-\
-Changelog - 12/04/22\
-Removed duplicate lists (botscouts, myips, blocklist_de_strongips, blocklist_de_bots that were already covered in fireholl level2, level3, and abusers1d)\
-Added my system configuration script\'85 not that it will name it to my current machine name. \
-I also removed haley_ssh since there seems to be some update errors.  I also explicitly listed denies on the inbound side as per the NIST recommendations. \
-\
-Changelog - 12/11/22\
-Added https://iplists.firehol.org/files/cruzit_web_attacks.ipset - CruzIT Web Attacks.\
-Updated DYNDNS Pomcounp lists in Murus and added to Vallum.\
-Added https://iplists.firehol.org/files/sslproxies_30d.ipset - SSL Proxies.\
-\
-]changelog - 1/15/23\
-Removed VoIPBL list as it has errors on Firehouse site.\
-Updated nations databases in Murus and Vallum\
-Removed DYNDNS group from Murus rule\
-Add these Ups to DYNDNS list in Vallum:\
-3.130.204.160\
-3.140.13.188\
-18.119.154.66\
-31.11.36.8\
-63.247.141.235\
-77.111.240.50\
-\
-Changelog 1/21/23\
-Added {\field{\*\fldinst{HYPERLINK "https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF"}}{\fldrslt https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF}} as a reading resource .\
-DNS restriction in Murus to manual rule\
-Changed localnet oassthru to specified ports in Vallum. \
-\pard\pardeftab720\partightenfactor0
-\cf0 block in on egress proto tcp from any os unknown in Murus\
-\
-Chagnelog 1/22/23\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 antispoof log quick for eth0 inet\
-\
-Changellog 1/28/23 - script file changes ONLY\
-sudo /bin/launchctl disable system/com.apple.netbiosd.plist\
-sudo ifconfig en0 -arp\
-#sudo ifconfig en0 dad - did not work\
-\
-changelog 1/29/23\
-Aded https://iplists.firehol.org/files/bds_atif.ipset\
-sudo launchctl disable system/netbiosd - in script\
-\
-changelog 1/31/23\
-Added 8443 (tcp) to custom firewall rules in Murus and Vallum for testing.\
-\
-Changelog 2/1/23\
-Added 192.16.58.8 for UmbrellaWhitelist in Murus and Vallum.\
-Updates DYNDNS list in Vallum:\
-31.11.36.8\
-52.71.57.184\
-52.86.6.113\
-74.208.236.193\
-77.111.240.50\
-#######Murus rule change - all outbound rules are custom now. Please see Custom Rules picture in root folder for complete list. Example is below: \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Guidance
+https://github.com/drduh/macOS-Security-and-Privacy-Guide
+https://github.com/usnistgov/macos_security#readme
+https://tools.cisco.com/security/center/resources/dns_best_practices
+https://www.cisco.com/c/en/us/support/docs/ip/access-lists/43920-iacl.html
+https://csrc.nist.gov
+https://downloads.cisecurity.org/#/
+https://learn.microsoft.com/en-us/archive/blogs/secguide/
+https://www.brightcloud.com/tools/url-ip-lookup.php
+https://docs.umbrella.com/deployment-umbrella/docs/domain-management#section-3-internal-queries
+https://support.umbrella.com/hc/en-us/articles/115004651426-CNAME-Records-with-DNS-caching-and-Umbrella
 
-\f1\b \cf3 pass \cf4 out\cf5  log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp, udp\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any\cf4  port \cf6  \cf8 \{\cf6 548, 88, 10548, 43, 3283, 5988, 5900, 631, 515, 9100, 123, 67, 68, 22, 8443, 80\cf8 \}\cf7  flags \cf6 S/SAFR\cf9  keep state\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Lists:
+https://iplists.firehol.org
+https://firehol.org/guides/icmpv6-recommendations/#allow-incoming-destination-unreachable-messages-only-for-existing-sessions
+https://www.spamhaus.org
+https://www.talosintelligence.com
+https://secureupdates.checkpoint.com/IP-list/TOR.txt
+https://www.opendbl.net
 
-\f0\b0 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 Changelog 2/2/23\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf0 ########after seeing that Murus logs showed Safari making web browser connections to Umbrella (logging them as 208.67.x.x) instead of the web address I made some changes. Vallum flows monitor showed the correct addresses. \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 Vallum Inbound now limits Umbrella communication to OpenDNS signed apps and DHCP to all Apple signed apps\
-Vallum Outbound now limits Umbrella communication to OpenDNS signed apps, DHCP to Apple signed apps, and all apps have to go through the filtered ports. \
-Added DHCP in Murus options. Whatever the path is\'85 DHCP and ICMP have to be in that category\'85 and not the custom rules. \
-\
-Changelog 2/3/23\
-Added a protection rule in Vallum for Vallum\'85 trying at least.\
-############Murus Custom rules mostly mirrored in Valllum\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Changelog - 11/18/22
 
-\f1\b \cf10 antispoof \cf5 log\cf11  quick \cf6 for eth0\cf4  inet\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf12 block \cf4 in\cf5  log\cf7 on \cf6 egress\cf7  proto \cf6 tcp\cf7  from \cf6 any os unknown\
-\cf12 block \cf5 log\cf4  inet6\cf7  proto \cf6 ipv6-icmp\cf7  from \cf6 any\cf7  to \cf6 any\
-\cf12 block \cf5 log\cf7  proto \cf6 icmp\cf7  from \cf6 any\cf7  to \cf6 any\
-\cf12 block \cf5 log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp, udp\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any\cf4  port \cf6 0\
-\cf12 block \cf5 log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp, udp\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any\cf4  port \cf6 3689\
-\cf12 block \cf4 in\cf7  f\cf5 log \cf7 rom \cf6 any\cf7  to \cf6 255.255.255.255\
-\cf12 block \cf4 in \cf5 log\cf7  from \cf6 any\cf7  to \cf6 127.0.0.1/32\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-\cf3 pass \cf4 out\cf6  \cf5  log \cf6 (user)\cf7  from \cf6 any \cf7  to\cf4  <\cf6 WhiteUmbrella\cf4 >\cf7  flags \cf6 S/SAFR\cf9  keep state\
-\cf3 pass \cf4 in\cf5  log \cf6 (user)\cf7  from\cf4  <\cf6 WhiteUmbrella\cf4 >\cf7  to \cf6 any\cf7  flags \cf6 S/SAFR\cf9  keep state\
-\cf3 pass \cf7 proto \cf5 log\cf7  \cf6 igmp\cf9  allow-opts\
-\cf3 pass \cf11 quick \cf5 log\cf7  from \cf6 any\cf7  to \cf8 \{\cf6 224.0.0.0/4 ff00::/8\cf8 \}\cf9  allow-opts\
-\cf3 pass \cf7 proto \cf5 log\cf7  \cf8 \{\cf6 esp, gre\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any
-\f0\b0 \cf0 \
+Removed allow all apps outbound rule in Vallum  - apps need to be signed.
+Moved dhcp inbound rule higher in Vallum.
 
-\f1\b \cf3 pass \cf4 out\cf5  log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any\cf4  port \cf8 \{\cf6 80, 443, 8443, 43\cf8 \}\cf7  flags \cf6 S/SAFR \cf9  keep state\
-\cf3 pass \cf4 out\cf5  log \cf6 (user)\cf7  proto \cf8 \{\cf6 udp\cf8 \}\cf7  from \cf6 any\cf7  to \cf6 any\cf4  port \cf8 \{\cf6 123\cf8 \}\cf6  \cf9  keep state\
-\cf3 pass \cf4 out\cf5  log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp\cf8 \}\cf7  from \cf6 any\cf7  to\cf4  <\cf6 all-local-nets\cf4 >\cf6  \cf4  port \cf6  \cf8 \{\cf6 22, 88, 389, 515, 548, 631, 636, 9100\cf8 \}\cf7  flags \cf6 S/SAFR\cf9  keep state\
-\cf3 pass \cf4 out\cf5  log \cf6 (user)\cf7  proto \cf8 \{\cf6 tcp, udp\cf8 \}\cf7  from \cf6 any\cf7  to\cf4  <\cf6 all-local-nets\cf4 >\cf6  \cf4  port \cf6  \cf8 \{\cf6 53, 749, 3283, 5988, 5900\cf8 \}\cf7  flags \cf6 S/SAFR\cf9  keep state
-\f0\b0 \cf0 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-\cf0 \
-Changelog 2/6/23\
-##########inbound rules.\
-Block in log [tcp,udp] from any to any port 0\
-\
-Changelog 2/8/23\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Changelog - 12/04/22
+Removed duplicate lists (botscouts, myips, blocklist_de_strongips, blocklist_de_bots that were already covered in fireholl level2, level3, and abusers1d)
+Added my system configuration script… not that it will name it to my current machine name. 
+I also removed haley_ssh since there seems to be some update errors.  I also explicitly listed denies on the inbound side as per the NIST recommendations. 
 
-\f2\b \cf13 Added screenshots on the location to update the nations databases in Vallum and Murus\cf2 .\cf14  This is necessary for the Unknown Nation block. 
-\f0\b0 \cf0 \
-\
-##################
-\f3\fs22 \cf15 \CocoaLigature0 sudo tcpdump -i en0 -s0 -c 1100 -AeHnnttttvvv -w test.pcap\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Changelog - 12/11/22
+Added https://iplists.firehol.org/files/cruzit_web_attacks.ipset - CruzIT Web Attacks.
+Updated DYNDNS Pomcounp lists in Murus and added to Vallum.
+Added https://iplists.firehol.org/files/sslproxies_30d.ipset - SSL Proxies.
 
-\f0\fs24 \cf0 \CocoaLigature1 ##################
-\f3\fs22 \cf15 \CocoaLigature0 Use Wireshark to see the data. Tcpdump is native on Mac/Linux. Wireshark is a GUI that makes it nice and readable. \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://www.tcpdump.org/manpages/tcpdump.1.html"}}{\fldrslt \cf15 https://www.tcpdump.org/manpages/tcpdump.1.html}} or {\field{\*\fldinst{HYPERLINK "https://www.tcpdump.org/index.html"}}{\fldrslt https://www.tcpdump.org/index.html}}\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://www.wireshark.org/"}}{\fldrslt \cf15 https://www.wireshark.org}}\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+]changelog - 1/15/23
+Removed VoIPBL list as it has errors on Firehouse site.
+Updated nations databases in Murus and Vallum
+Removed DYNDNS group from Murus rule
+Add these Ups to DYNDNS list in Vallum:
+3.130.204.160
+3.140.13.188
+18.119.154.66
+31.11.36.8
+63.247.141.235
+77.111.240.50
 
-\f2\b\fs24 \cf15 \
-\pard\pardeftab720\partightenfactor0
+Changelog 1/21/23
+Added https://media.defense.gov/2022/Jun/15/2003018261/-1/-1/0/CTR_NSA_NETWORK_INFRASTRUCTURE_SECURITY_GUIDE_20220615.PDF as a reading resource .
+DNS restriction in Murus to manual rule
+Changed localnet oassthru to specified ports in Vallum. 
+block in on egress proto tcp from any os unknown in Murus
 
-\f0\b0 \cf13 \cb16 \expnd0\expndtw0\kerning0
-\CocoaLigature1 For those with OpenDNS Cisco Umbrella Prosumer and legacy Cisco Umbrella packages... the Legacy Categories (under Content Categories) are still there. It might mean extra monitoring (using Activity Search)... or whitelisting (Global Allowed List under Destinations Lists)  but you can add those categories back. In this case more is more.\
-\
-Changelog 2/15/23\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Chagnelog 1/22/23
+antispoof log quick for eth0 inet
 
-\f1\b \cf12 \cb1 \kerning1\expnd0\expndtw0 block \cf5 log \cf7  proto \cf8 \{\cf6 tcp, udp\cf8 \}\cf7  from \cf6 any\cf4  port \cf8 \{\cf6 0, 5353\cf8 \}\cf7  to \cf6 any\cf4  port \cf8 \{\cf6 0, 5353\cf8 \}\cf6 \
-Added Umbrella group back to PassList in Murus.\
-\
-Changelog 2/18/23\
-Blocking and logging a \'93new\'94 signed version of com.apple.mDNSResponder in Vallum on the inbound and outbound.  While logging multicast traffic in Valllum.
-\f2 \cf13 \cb16 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Changellog 1/28/23 - script file changes ONLY
+sudo /bin/launchctl disable system/com.apple.netbiosd.plist
+sudo ifconfig en0 -arp
+#sudo ifconfig en0 dad - did not work
 
-\f0\b0 \cf0 \cb1 \
-Zelle me:  vaughn@aegisitnyc.com\
-\
-\pard\pardeftab720\partightenfactor0
-{\field{\*\fldinst{HYPERLINK "https://www.linkedin.com/in/vahart"}}{\fldrslt 
-\f4\fs26 \cf17 \cb18 \expnd0\expndtw0\kerning0
-\ul \ulc17 https://www.linkedin.com/in/vahart}}}
+changelog 1/29/23
+Aded https://iplists.firehol.org/files/bds_atif.ipset
+sudo launchctl disable system/netbiosd - in script
+
+changelog 1/31/23
+Added 8443 (tcp) to custom firewall rules in Murus and Vallum for testing.
+
+Changelog 2/1/23
+Added 192.16.58.8 for UmbrellaWhitelist in Murus and Vallum.
+Updates DYNDNS list in Vallum:
+31.11.36.8
+52.71.57.184
+52.86.6.113
+74.208.236.193
+77.111.240.50
+#######Murus rule change - all outbound rules are custom now. Please see Custom Rules picture in root folder for complete list. Example is below: 
+pass out log (user) proto {tcp, udp} from any to any port  {548, 88, 10548, 43, 3283, 5988, 5900, 631, 515, 9100, 123, 67, 68, 22, 8443, 80} flags S/SAFR keep state
+
+Changelog 2/2/23
+########after seeing that Murus logs showed Safari making web browser connections to Umbrella (logging them as 208.67.x.x) instead of the web address I made some changes. Vallum flows monitor showed the correct addresses. 
+Vallum Inbound now limits Umbrella communication to OpenDNS signed apps and DHCP to all Apple signed apps
+Vallum Outbound now limits Umbrella communication to OpenDNS signed apps, DHCP to Apple signed apps, and all apps have to go through the filtered ports. 
+Added DHCP in Murus options. Whatever the path is… DHCP and ICMP have to be in that category… and not the custom rules. 
+
+Changelog 2/3/23
+Added a protection rule in Vallum for Vallum… trying at least.
+############Murus Custom rules mostly mirrored in Valllum
+antispoof log quick for eth0 inet
+block in logon egress proto tcp from any os unknown
+block log inet6 proto ipv6-icmp from any to any
+block log proto icmp from any to any
+block log (user) proto {tcp, udp} from any to any port 0
+block log (user) proto {tcp, udp} from any to any port 3689
+block in flog rom any to 255.255.255.255
+block in log from any to 127.0.0.1/32
+pass out  log (user) from any  to <WhiteUmbrella> flags S/SAFR keep state
+pass in log (user) from <WhiteUmbrella> to any flags S/SAFR keep state
+pass proto log igmp allow-opts
+pass quick log from any to {224.0.0.0/4 ff00::/8} allow-opts
+pass proto log {esp, gre} from any to any
+pass out log (user) proto {tcp} from any to any port {80, 443, 8443, 43} flags S/SAFR  keep state
+pass out log (user) proto {udp} from any to any port {123}  keep state
+pass out log (user) proto {tcp} from any to <all-local-nets>  port  {22, 88, 389, 515, 548, 631, 636, 9100} flags S/SAFR keep state
+pass out log (user) proto {tcp, udp} from any to <all-local-nets>  port  {53, 749, 3283, 5988, 5900} flags S/SAFR keep state
+
+Changelog 2/6/23
+##########inbound rules.
+Block in log [tcp,udp] from any to any port 0
+
+Changelog 2/8/23
+Added screenshots on the location to update the nations databases in Vallum and Murus. This is necessary for the Unknown Nation block. 
+
+##################sudo tcpdump -i en0 -s0 -c 1100 -AeHnnttttvvv -w test.pcap
+##################Use Wireshark to see the data. Tcpdump is native on Mac/Linux. Wireshark is a GUI that makes it nice and readable. 
+https://www.tcpdump.org/manpages/tcpdump.1.html or https://www.tcpdump.org/index.html
+https://www.wireshark.org
+
+For those with OpenDNS Cisco Umbrella Prosumer and legacy Cisco Umbrella packages... the Legacy Categories (under Content Categories) are still there. It might mean extra monitoring (using Activity Search)... or whitelisting (Global Allowed List under Destinations Lists)  but you can add those categories back. In this case more is more.
+
+Changelog 2/15/23
+block log  proto {tcp, udp} from any port {0, 5353} to any port {0, 5353}
+Added Umbrella group back to PassList in Murus.
+
+Changelog 2/18/23
+Blocking and logging a “new” signed version of com.apple.mDNSResponder in Vallum on the inbound and outbound.  While logging multicast traffic in Valllum.
+
+Zelle me:  vaughn@aegisitnyc.com
+
+https://www.linkedin.com/in/vahart
