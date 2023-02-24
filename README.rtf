@@ -133,6 +133,14 @@ Blocking and logging a “new” signed version of com.apple.mDNSResponder in Va
 Changeling 2/21/23
 Another mdnsresponder was noticed in Flow Monitor… blocked on inbound. 
 
+Changeling 2/24/23 
+##################to block port 5353 ,make the following changes 
+remove the following rule
+-> pass quick log from any to (224.0.0.0/4 ff00:/8) allow-opts
+add the following rules to the end of the custom rules
+-> block log (user) proto sscopmce from any to any
+﻿﻿-> block proto {tcp, udp} from any to any port {5353}
+
 Zelle me:  vaughn@aegisitnyc.com
 
 https://www.linkedin.com/in/vahart
