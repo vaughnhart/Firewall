@@ -30,6 +30,6 @@ sudo networksetup -setv6off "Thunderbolt Bridge"
 sudo networksetup -setv6off "Wi-Fi"
 sudo ifconfig en0 -arp
 sudo launchctl disable system/netbiosd
-
-
+cd /Users
+sudo chmod og-rwx *
 
