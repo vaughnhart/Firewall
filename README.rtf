@@ -170,7 +170,7 @@ sudo chmod og-rwx *
 
 Changelog 4/5/23
 added screenshots for the above changelog.
-added the following recommendations from https://github.com/drduh/macOS-Security-and-Privacy-Guide to the script :
+added the following recommendations from https://github.com/drduh/macOS-Security-and-Privacy-Guide to the script:
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/exclusive
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-shm
@@ -210,7 +210,7 @@ rm -rfv ~/Library/Assistant/SiriAnalytics.db
 chmod -R 000 ~/Library/Assistant/SiriAnalytics.db
 chflags -R uchg ~/Library/Assistant/SiriAnalytics.db
 defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
-sudo shutdown -h now -o
+sudo shutdown -r now -o
 
 
 
