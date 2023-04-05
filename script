@@ -71,4 +71,4 @@ rm -rfv ~/Library/Assistant/SiriAnalytics.db
 chmod -R 000 ~/Library/Assistant/SiriAnalytics.db
 chflags -R uchg ~/Library/Assistant/SiriAnalytics.db
 defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
-sudo shutdown -h now -o
+sudo shutdown -r now -o
