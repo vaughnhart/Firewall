@@ -63,6 +63,7 @@ id,destination,type,comment,createdAt
 44508,contextweb.com,domain,,2020-05-09 05:33:09
 44652,infolinks.com,domain,,2021-05-15 12:36:42
 44800,exponential.com,domain,,2020-11-22 05:43:30
+45235,jabber.org,domain,,2023-04-07 01:00:11
 45272,adform.net,domain,,2020-09-11 04:42:14
 45539,adroll.com,domain,,2019-12-11 05:50:41
 45541,comscore.com,domain,,2022-07-19 11:23:17
@@ -91,6 +92,7 @@ id,destination,type,comment,createdAt
 87721,desiringgod.org,domain,,2023-01-22 16:14:01
 89507,lduhtrp.net,domain,,2021-05-31 13:36:23
 89901,bkrtx.com,domain,,2020-05-09 05:43:49
+91415,yahooapis.com,domain,,2023-04-07 01:00:11
 92481,dartsearch.net,domain,,2020-07-16 03:08:29
 107985,spotxchange.com,domain,,2020-05-31 05:59:39
 108669,vindicosuite.com,domain,,2020-08-16 18:10:11
@@ -112,10 +114,12 @@ id,destination,type,comment,createdAt
 197775,33across.com,domain,,2020-11-22 05:59:43
 202135,proxz.com,domain,,2022-10-28 12:57:31
 206874,jumptap.com,domain,,2022-07-19 11:23:17
+224164,appspot.com,domain,,2023-04-07 01:00:11
 226842,wonderwall.com,domain,,2023-01-22 16:14:01
 228039,salemwebnetwork.com,domain,,2021-03-10 03:09:57
 248431,pixel,domain,,2022-10-17 07:34:17
 251289,googletagservices.com,domain,,2022-10-31 09:01:22
+309238,yahoo.net,domain,,2023-04-07 01:00:11
 356331,mikrotik.com,domain,,2020-08-23 10:03:03
 399098,sitescout.com,domain,,2020-09-03 22:24:12
 416276,everesttech.net,domain,,2021-04-24 01:02:49
@@ -486,3 +490,4 @@ id,destination,type,comment,createdAt
 63846253,audiohook.com,domain,,2022-07-02 21:48:38
 65492141,adsgtm-sandbox.spotify.com,domain,,2022-11-19 03:04:17
 66398646,vid.kinja.com,domain,,2023-01-22 16:14:01
+67469892,googleechotest.com,domain,,2023-04-07 01:00:11
