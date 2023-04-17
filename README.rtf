@@ -225,6 +225,21 @@ changelog 4/16/23
 created a new Vallum rule: Vallum_UmbrellaDNSOnly  that reflects the DNS leak changes.
 ##################  mask-api.icloud.com which seems to have a lot of traffic generated to it as well in Cisco Umbrella but NIST hasn’t added it to their recommended block list. You may want to as well. Apple’s mask*.icloud.com address seem to be categorized under Online Storage but are actually proxy/anonymizer or DoH and DoT. Sorta like nesting a domain name. site.example.com hosts the vpn, but example.com is for art.
 
+changelog 4/17/23
+added in Murus and Murus_UmbrellaDNSOnly:
+an inbound and an outbound rule blocking all ports on ipv6
+block quick log from any to {224.0.0.0/4 ff00::/8 224.0.0.251/32 ff02::fb/128}
+block log (user) proto 53 from any to any
+block log (user) inet6 from any to any
+
+added in Vallum and Vallum_UmbrellaDNSOnly:
+block in ipv6 from any to any by all apps (any protocol version ipv6)
+block in ipv6 from any to any by all apps (ipv6 protocol version any)
+block out ipv6 from any to any by all apps (any protocol version ipv6)
+block out  ipv6 from any to any by all apps (ipv6 protocol version any)
+added 224.0.0.251/32 and ff02::fb/128 to MDNS group.
+################## I’m trying to kill MDNS and ICMP-V6 packets in packet captures (without edge or switch control)… iCloud/AirPlay might automate these broadcasts
+
 Zelle me:  vaughn@aegisitnyc.com
 
 https://www.linkedin.com/in/vahart
