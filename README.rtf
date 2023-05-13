@@ -273,6 +273,12 @@ https://support.apple.com/en-us/HT201684
 #######################Testing umask variable… but this machines that have only one user login (changing the umask can break things on shared machines). sudo launchctl config user umask 027
 https://docs.jamf.com/customer-education/jamf-100-course/5.0/Lesson_15_Introduction_to_Scripting.html
 
+Changelog 5/13/23
+Added in Vallum and Vallum_UmbrellaDNSOnly rules that allow captiveagent to communicate to captive portals running on ports 8880 and 8843 (mainly used by Ubiquiti wireless access points.  
+Added in  Murus and Murus_UmbrellaDNSOnly rules that allow communication to ports 8880 and 8843 for local nets only.  
+pass out log (user) proto {tcp} from any to <all-local-nets>  port  {22, 88, 389, 515, 548, 631, 636, 8880, 8843, 9100} flags any keep state
+Added a LastConfig folder serves as an archive the previous version to all Vallum and Murus and Script configurations. 
+
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
 Social Media:
