@@ -1,7 +1,7 @@
 #! /bin/zsh
-sudo scutil --set ComputerName BoSsamLover
+sudo scutil --set ComputerName 보쌈애인
 sudo scutil --set LocalHostName BoSsamLover
-sudo scutil --set HostName BoSsamLover
+sudo scutil --set HostName 보쌈애인
 sudo /bin/launchctl disable system/org.apache.httpd
 sudo /bin/launchctl disable system/com.apple.nfsd
 sudo /usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
@@ -71,4 +71,5 @@ rm -rfv ~/Library/Assistant/SiriAnalytics.db
 chmod -R 000 ~/Library/Assistant/SiriAnalytics.db
 chflags -R uchg ~/Library/Assistant/SiriAnalytics.db
 defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
+sudo launchctl config user umask 027
 sudo shutdown -r now -o
