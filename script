@@ -30,8 +30,6 @@ sudo networksetup -setv6off "Thunderbolt Bridge"
 sudo networksetup -setv6off "Wi-Fi"
 sudo ifconfig en0 -arp
 sudo launchctl disable system/netbiosd
-cd /Users
-sudo chmod og-rwx *
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/exclusive
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-shm
@@ -72,4 +70,6 @@ chmod -R 000 ~/Library/Assistant/SiriAnalytics.db
 chflags -R uchg ~/Library/Assistant/SiriAnalytics.db
 defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
 sudo launchctl config user umask 077
+cd /Users
+sudo chmod og-rwx *
 sudo shutdown -r now -o
