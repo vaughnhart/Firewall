@@ -315,6 +315,10 @@ added the FBI IC3 report on Elderly Fraud. please read - the elderly are losing 
 
 Changeling 07/26/23
 sudo launchctl config user umask 027 in script has been changed to sudo launchctl config user umask 077 making it single user mode. 
+Moved the rolling lines to the bottom, right before reboot.:
+cd /Users
+sudo chmod og-rwx *
+You can run this in terminal yourself. It secures your folders from other “users” and limits the Shared folder from being uses as a place for bad guys to store stuff. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
