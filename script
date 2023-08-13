@@ -30,6 +30,7 @@ sudo networksetup -setv6off "Thunderbolt Bridge"
 sudo networksetup -setv6off "Wi-Fi"
 sudo ifconfig en0 -arp
 sudo launchctl disable system/netbiosd
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/exclusive
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite
 rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-shm
