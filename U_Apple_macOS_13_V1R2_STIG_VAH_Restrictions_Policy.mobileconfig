@@ -35,6 +35,20 @@
       </dict>
       <dict>
         <key>PayloadDisplayName</key>
+        <string>Allow CloudCalendar</string>
+        <key>PayloadIdentifier</key>
+        <string>mil.DISA.APPL-13-002012</string>
+        <key>PayloadType</key>
+        <string>com.apple.applicationaccess</string>
+        <key>PayloadUUID</key>
+        <string>A3EF5754-B516-4A63-94ED-9632E20BB44F</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>allowCloudCalendar</key>
+        <false />
+      </dict>
+      <dict>
+        <key>PayloadDisplayName</key>
         <string>Allow Cloud Reminders</string>
         <key>PayloadIdentifier</key>
         <string>mil.DISA.APPL-13-002013</string>
@@ -49,6 +63,20 @@
       </dict>
       <dict>
         <key>PayloadDisplayName</key>
+        <string>Allow Cloud Addressbook</string>
+        <key>PayloadIdentifier</key>
+        <string>mil.DISA.APPL-13-002014</string>
+        <key>PayloadType</key>
+        <string>com.apple.applicationaccess</string>
+        <key>PayloadUUID</key>
+        <string>3CB1A1C9-F142-4C59-BA97-39A297EA36ED</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>allowCloudAddressBook</key>
+        <false />
+      </dict>
+      <dict>
+        <key>PayloadDisplayName</key>
         <string>Allow Cloud Mail</string>
         <key>PayloadIdentifier</key>
         <string>mil.DISA.APPL-13-002015</string>
@@ -59,6 +87,20 @@
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>allowCloudMail</key>
+        <false />
+      </dict>
+      <dict>
+        <key>PayloadDisplayName</key>
+        <string>Allow Cloud Notes</string>
+        <key>PayloadIdentifier</key>
+        <string>mil.DISA.APPL-13-002016</string>
+        <key>PayloadType</key>
+        <string>com.apple.applicationaccess</string>
+        <key>PayloadUUID</key>
+        <string>E8282C29-FD1F-46DE-85C3-7FE42BCF2E13</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>allowCloudNotes</key>
         <false />
       </dict>
       <dict>
@@ -231,7 +273,7 @@
       </dict>
 	  <dict>
         <key>PayloadDisplayName</key>
-        <string>Automatically Update Xprotect</string>
+        <string>Automatically Upodate Xprotect</string>
         <key>PayloadIdentifier</key>
         <string>mil.DISA.APPL-13-002070</string>
         <key>PayloadType</key>
@@ -403,9 +445,9 @@
       </dict>
     </array>
     <key>PayloadDescription</key>
-    <string>This payload disables partial iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
+    <string>This payload disables iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
     <key>PayloadDisplayName</key>
-    <string>Restrictions Policy</string>
+    <string>VAH Restrictions Policy</string>
     <key>PayloadIdentifier</key>
     <string>mil.DISA.APPL-13.Restrictions_Policy</string>
     <key>PayloadOrganization</key>
