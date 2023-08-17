@@ -6,39 +6,37 @@
 	<array>
 		<dict>
 			<key>PayloadDisplayName</key>
-			<string>Disable iCloud Private Relay</string>
+			<string>App Control</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.applicationaccess.5CEF4324-9542-434A-8DBC-97C9F5983A8A</string>
+			<string>com.apple.applicationaccess.new.5CEF4324-9542-434A-8DBC-97C9F5983A8A</string>
 			<key>PayloadType</key>
-			<string>com.apple.applicationaccess</string>
+			<string>com.apple.applicationaccess.new</string>
 			<key>PayloadUUID</key>
 			<string>5CEF4324-9542-434A-8DBC-97C9F5983A8A</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
-			<key>allowCloudPrivateRelay</key>
-			<false/>
-			<key>allowGameCenter</key>
-			<false/>
-			<key>allowCloudReminders</key>
-			<false/>
-			<key>allowContentCaching</key>
-			<false/>
-			<key>allowFindMyFriends</key>
-			<false/>
-			<key>allowApplePersonalizedAdvertising</key>
-			<false/>
-			<key>allowFingerprintForUnlock</key>
-			<false/>
-			<key>allowUSBRestrictedMode</key>
+			<key>familyControlsEnabled</key>
 			<true/>
+			<key>pathBlackList</key>
+			<array>
+				<string>/System/Applications/News.app</string>
+				<string>/System/Applications/Siri.app</string>
+				<string>/System/Applications/Stocks.app</string>
+				<string>/System/Applications/Freeform.app</string>
+				<string>/System/Applications/Home.app</string>
+				<string>/System/Applications/Time Machine.app</string>
+				<string>/System/Applications/VoiceMemos.app</string>
+				<string>/System/Applications/Shortcuts.app</string>
+			<string>/System/Applications/Utilities/Bluetooth File Exchange.app</string>
+			</array>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>This payload disables iCloudPrivateRelay. Version 2</string>
+	<string>App Control Version 1</string>
 	<key>PayloadDisplayName</key>
-	<string>Private Relay Policy</string>
+	<string>App Control</string>
 	<key>PayloadIdentifier</key>
-	<string>AOSX-13.Restrictions_Policy</string>
+	<string>AOSX-13.VAH_Restrictions_Policy</string>
 	<key>PayloadOrganization</key>
 	<string>DISA.MIL</string>
 	<key>PayloadRemovalAllowed</key>
