@@ -38,6 +38,7 @@ id,destination,type,comment,createdAt
 26388338,dropbox-dns.com,domain,,2021-12-10 00:20:53
 26568691,apple-cloudkit.com,domain,,2023-08-22 11:21:43
 26598111,cvws.icloud-content.com,domain,,2023-08-22 11:22:22
+28193472,p59-content.icloud.com,domain,,2023-08-29 19:51:11
 28448130,photos.app.goo.gl,domain,,2021-08-29 03:02:19
 28970223,gateway.icloud.com,domain,,2023-08-22 10:48:21
 29338348,p59-availability.icloud.com,domain,,2023-08-22 10:52:19
@@ -46,6 +47,7 @@ id,destination,type,comment,createdAt
 29730670,metrics.icloud.com,domain,,2023-08-22 10:52:19
 29921265,p59-fmfmobile.icloud.com,domain,,2023-08-22 11:00:22
 38052860,dropboxcaptcha.com,domain,,2021-12-10 02:54:23
+38257514,p59-escrowproxy.icloud.com,domain,,2023-08-29 19:51:11
 38729388,ssd.eff.org,domain,,2023-03-08 05:16:24
 39474504,web.voice.telephony.goog,domain,,2023-04-24 16:51:15
 46805062,metrics-config.icloud.com,domain,,2023-08-22 11:49:58
