@@ -131,10 +131,10 @@ Added Umbrella group back to PassList in Murus.
 Changelog 2/18/23
 Blocking and logging a “new” signed version of com.apple.mDNSResponder in Vallum on the inbound and outbound.  While logging multicast traffic in Valllum.
 
-Changeling 2/21/23
+changelog 2/21/23
 Another mdnsresponder was noticed in Flow Monitor… blocked on inbound. 
 
-Changeling 2/24/23 
+changelog 2/24/23 
 ##################to block port 5353 ,make the following changes - in Murus and Vallum (inbound/outbound)
 remove the following rule
  pass quick log from any to (224.0.0.0/4 ff00:/8) allow-opts
@@ -147,21 +147,21 @@ Set custom rules tcp flags back to any in Murus.
 ############# clear all saved application states https://osxdaily.com/2011/07/17/delete-specific-application-saved-states-from-mac-os-x-10-7-lion-resume/
 ############# empty the trash and reboot
 
-Changeling 3/3/23
+changelog 3/3/23
 Added 3.19.116.195 to DYNDNS block list in Vallum 
 
-Changeling 3/6/23
+changelog 3/6/23
 There are new prerequisites for Cisco Umbrella… updated them in Murus and Vallum. I didn’t remove anything… just added 192.229.211.108
 https://docs.umbrella.com/deployment-umbrella/docs/2-prerequisites-update#section-network-access
 There is an issue with resolving debug.opendns.com 
 
-Changeling 3/7/23
+changelog 3/7/23
 Added AdsYoyo blocklist from https://pgl.yoyo.org/adservers/iplist.php?ipformat=&showintro=0&mimetype=plaintext
 
-Changeling 4/3/23
+changelog 4/3/23
 Added mask.icloud.com and mask-h2.icloud.com to Ban group in Vallum and also Global Block List in Cisco Umbrella. 
 
-Changeling 4/4/23
+changelog 4/4/23
 Added the following lines to the script file:
 cd /Users
 sudo chmod og-rwx *
@@ -262,7 +262,7 @@ changelog 4/27/23
 fixed DHCP issues in Vallum and Vallum_UmbrellaDNSOnly. Working on Captive Portal Issues. 
 added new Vallum config called Test_UmbrellaPort53 which adds UDP 53 access to Umbrella apps in addition to CaptivePortal. 
 
-Changeling 5/623
+changelog 5/623
 Added screenshots for Privacy and Security Settings and Battery Configuration (OS Ventura… but the options exist in previous Mac OSs - check Energy Saver )
 Added additional US Government recommendation on logging. (This is for really advanced users)
 
@@ -313,7 +313,7 @@ Changed the priority of the igmp pass rule.
 changelog 07/24/23
 added the FBI IC3 report on Elderly Fraud. please read - the elderly are losing billions to investment fraud and coins (BitCoin, Ethereum) are at the top of the list. 
 
-Changeling 07/26/23
+changelog 07/26/23
 sudo launchctl config user umask 027 in script has been changed to sudo launchctl config user umask 077 making it single user mode. 
 Moved the rolling lines to the bottom, right before reboot.:
 cd /Users
@@ -370,6 +370,9 @@ Changelog 8/28/23
 https://datatracker.ietf.org/doc/rfc9369/ QUIC Version 2
 https://datatracker.ietf.org/doc/html/rfc9002 QUIC Loss Detection and Control
 https://datatracker.ietf.org/doc/html/rfc7838 HTTP Alt Services
+
+Changelog
+ttps://www.iana.org/assignments/quic - IANA’s QUIC database
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
