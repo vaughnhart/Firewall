@@ -27,6 +27,7 @@
 				<string>/System/Applications/Time Machine.app</string>
 				<string>/System/Applications/VoiceMemos.app</string>
 				<string>/System/Applications/Shortcuts.app</string>
+				<string>/usr/libexec/wifip2pd</string>
 			<string>/System/Applications/Utilities/Bluetooth File Exchange.app</string>
 			</array>
 		</dict>
