@@ -394,7 +394,8 @@ I also think Adsorb may interfere with Starbucks and other Captive Portals.
 
 Changelog 9/18/23
 Yep… adsorb or other network-level ad blockers block Ads on Captive Portals. You will need to whitelist the page or turn Adsorb off. 
-Added  to the string <string>/usr/libexec/wifip2pd</string> to U_Apple_macOS_AppControl_VAH.mobileconfig in an effort to block PrivateRelay based on the following files being active in loss when PriaveRelay was enabled:
+Added  to the string <string>/usr/libexec/wifip2pd</string> to U_Apple_macOS_AppControl_VAH.mobileconfig in an effort to block PrivateRelay based on the following files being active in lsof when PrivateRelay was enabled.
+I ran lsof and looked for all the files which has com.apple.net.netagent running or associated with their process:
 com.apple.net.netagent
 /usr/libexec/wifip2pd
 /Users/vaughnhart/Library/Caches/GeoServices
