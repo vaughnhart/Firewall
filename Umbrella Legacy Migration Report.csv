@@ -1,0 +1,22 @@
+Legacy Category,New Category,Destination,Migration Change,Current Behavior,Destination's Talos Categorization,DNS Policy Impact,Identity Impact
+File Storage,Online Storage and Backup,docs.google.com,Allowed by new category after migration,Blocked by File Storage,"Categorized as Online Document Sharing and Collaboration",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,mask-api.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,gateway.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,p59-fmfmobile.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,metrics.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,p59-quota.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,oneclient.sfx.ms,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,skyapi.onedrive.live.com,No impact; same behavior,Blocked by File Storage,"Categorized as Business and Industry, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,onedrive.live.com,No impact; same behavior,Blocked by File Storage,"Categorized as Computers and Internet, Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,p59-acsegateway.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,p59-availability.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,storage.live.com,No impact; same behavior,Blocked by File Storage,"Categorized as Business and Industry, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,setup.icloud.com,No impact; same behavior,Blocked by File Storage,"Categorized as Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,drive.google.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,api.onedrive.com,No impact; same behavior,Blocked by File Storage,"Categorized as Computers and Internet, Infrastructure and Content Delivery Networks, Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,api-content.dropbox.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,i-bnz06p-cor004.api.p001.1drv.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,api.dropbox.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+File Storage,Online Storage and Backup,i-blz04p-cor001.api.p001.1drv.com,No impact; same behavior,Blocked by File Storage,"Categorized as Online Storage and Backup",1 DNS Policy,0 Identities
+Proxy / Anonymizer,Filter Avoidance,token.safebrowsing.apple,Allowed by new category after migration,Blocked by Proxy / Anonymizer,"Categorized as DoH and DoT",1 DNS Policy,0 Identities
+Proxy / Anonymizer,Filter Avoidance,proxy.safebrowsing.apple,Allowed by new category after migration,Blocked by Proxy / Anonymizer,"Categorized as DoH and DoT",1 DNS Policy,0 Identities
