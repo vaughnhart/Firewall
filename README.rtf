@@ -411,6 +411,16 @@ Changelog 9/19/23
 Uploaded my Cisco Umbrella Legacy Migration Report for reference. 
 https://datatracker.ietf.org/wg/masque/documents/ - tunneling over UDP with QUIC.
 
+Changelog 9/23/23
+Added to script
+sudo pmset -a womp 0
+sudo pmset -a sleep 1
+sudo pmset -a displaysleep 2
+sudo pmset -a networkoversleep 0
+sudo /usr/bin/defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd LocationServicesEnabled -bool true; /bin/launchctl kickstart -k system/com.apple.locationd
+sudo /usr/bin/defaults write /Library/Preferences/com.apple.locationmenu.plist ShowSystemServices -bool true
+sudo /usr/sbin/systemsetup -f -setremotelogin off >/dev/null
+sudo /bin/launchctl disable system/com.openssh.sshd
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
