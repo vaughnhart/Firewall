@@ -21,6 +21,34 @@
 			<false/>
 			<key>allowCloudReminders</key>
 			<false/>
+			<key>allowCloudAddressBook</key>
+			<false/>
+			<key>allowCloudCalendar</key>
+			<false/>
+			<key>allowCloudFreeform</key>
+			<false/>
+			<key>allowCloudMail</key>
+			<false/>
+			<key>allowCloudNotes</key>
+			<false/>
+			<key>allowAirDrop</key>
+			<false/>
+			<key>allowActivityContinuation</key>
+			<false/>
+			<key>forceOnDeviceOnlyDictation</key>
+			<true/>
+			<key>allowPasswordProximityRequests</key>
+			<false/>
+			<key>allowPasswordSharing</key>
+			<false/>
+			<key>allowAirPlayIncomingRequests</key>
+			<false/>
+			<key>allowDiagnosticSubmission</key>
+			<false/>
+			<key>allowApplePersonalizedAdvertising</key>
+			<false/>
+			<key>allowAssistant</key>
+			<false/>
 			<key>allowContentCaching</key>
 			<false/>
 			<key>allowFindMyFriends</key>
