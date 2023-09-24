@@ -20,6 +20,23 @@ sudo /bin/launchctl disable system/com.apple.screensharing
 sudo /bin/launchctl disable system/com.apple.smbd
 sudo /bin/launchctl disable system/com.openssh.sshd
 sudo /bin/launchctl disable system/com.apple.netbiosd.plist
+sudo /bin/chmod -RN /var/audit
+sudo /bin/chmod -N /var/audit
+sudo /bin/launchctl enable system/com.apple.auditd
+sudo /bin/launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.auditd.plist  
+sudo /usr/sbin/audit -i
+sudo /bin/chmod -N /etc/security/audit_control
+sudo /usr/bin/chgrp wheel /etc/security/audit_control  
+sudo /bin/chmod 440 /etc/security/audit_control
+sudo /usr/sbin/chown root /etc/security/audit_control 
+sudo /usr/bin/chgrp -R wheel /var/audit/*
+sudo /bin/chmod 440 /var/audit/*
+sudo /usr/bin/chgrp wheel /var/audit
+sudo /usr/sbin/chown root /var/audit
+sudo /bin/chmod 700 /var/audit
+sudo /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:7d/' /etc/security/audit_control; /usr/sbin/audit -s
+sudo /usr/sbin/nvram boot-args="" 
+sudo /usr/bin/security authorizationdb write system.login.screensaver "use-login-window-ui"
 sudo pmset -a destroyfvkeyonstandby 1
 sudo pmset -a hibernatemode 25
 sudo pmset -a powernap 0
