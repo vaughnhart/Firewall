@@ -49,6 +49,30 @@
 			<false/>
 			<key>allowAssistant</key>
 			<false/>
+			<key>allowCloudBackup</key>
+			<false/>
+			<key>allowSharedStream</key>
+			<false/>
+			<key>forceAirDropUnmanaged</key>
+			<true/>
+			<key>forceAirPlayOutgoingRequestsPairingPassword</key>
+			<true/>
+			<key>allowUnmanagedToReadManagedContacts</key>
+			<false/>
+			<key>allowManagedToWriteUnmanagedContacts</key>
+			<false/>
+			<key>allowOpenFromManagedToUnmanaged</key>
+			<false/>
+			<key>allowOpenFromUnmanagedToManaged</key>
+			<false/>
+			<key>allowPairedWatch</key>
+			<false/>
+			<key>forceWatchWristDetection</key>
+			<true/>
+			<key>allowAutoUnlock</key>
+			<false/>
+			<key>allowHostPairing</key>
+			<false/>
 			<key>allowContentCaching</key>
 			<false/>
 			<key>allowFindMyFriends</key>
