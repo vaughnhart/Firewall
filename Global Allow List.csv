@@ -29,6 +29,8 @@ id,destination,type,comment,createdAt
 4778469,dropboxstatic.com,domain,,2021-12-10 02:40:05
 5372365,onedrive.com,domain,,2021-11-25 17:06:42
 5896303,onedrive.live.com,domain,,2021-11-25 16:57:12
+6644417,p23-content.icloud.com,domain,,2023-10-30 14:31:11
+7527133,p25-content.icloud.com,domain,,2023-10-30 14:31:11
 10061321,fonts.gstatic.com,domain,,2020-02-23 07:01:14
 13488629,1drv.com,domain,,2021-11-25 17:05:38
 16234245,icloud-content.com,domain,,2023-08-22 11:22:22
@@ -46,6 +48,7 @@ id,destination,type,comment,createdAt
 29338348,p59-availability.icloud.com,domain,,2023-08-22 10:52:19
 29338356,p59-keyvalueservice.icloud.com,domain,,2021-11-25 17:02:26
 29338358,p59-quota.icloud.com,domain,,2023-08-22 11:00:22
+29338370,p59-sharedstreams.icloud.com,domain,,2023-10-30 14:31:11
 29730670,metrics.icloud.com,domain,,2023-08-22 10:52:19
 29921265,p59-fmfmobile.icloud.com,domain,,2023-08-22 11:00:22
 38052860,dropboxcaptcha.com,domain,,2021-12-10 02:54:23
@@ -55,6 +58,7 @@ id,destination,type,comment,createdAt
 39474504,web.voice.telephony.goog,domain,,2023-04-24 16:51:15
 46805062,metrics-config.icloud.com,domain,,2023-08-22 11:49:58
 47323966,p59-ckdatabasews.icloud.com,domain,,2023-08-22 11:19:27
+47324168,p63-content.icloud.com,domain,,2023-10-30 14:31:11
 47324496,p59-remindersws.icloud.com,domain,,2023-08-22 11:19:27
 47324566,p59-calendarws.icloud.com,domain,,2023-08-22 11:40:10
 47324698,p59-ckdevice.icloud.com,domain,,2023-08-22 11:40:10
