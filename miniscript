@@ -1,0 +1,60 @@
+#! /bin/zsh
+sudo scutil --set ComputerName 보쌈애인
+sudo scutil --set LocalHostName BoSsamLover
+sudo scutil --set HostName 보쌈애인
+sudo /bin/launchctl disable system/org.apache.httpd
+sudo /bin/launchctl disable system/com.apple.nfsd
+sudo /usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
+sudo /bin/launchctl disable system/com.apple.tftpd
+sudo /bin/launchctl load -w /System/Library/LaunchDaemons/com.apple.timed.plist
+sudo /usr/bin/security authorizationdb write system.login.screensaver "use-login-window-ui"
+sudo /bin/launchctl disable system/com.apple.uucp
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/com.apple.ODSAgent.plist 
+sudo /usr/sbin/sysadminctl -smbGuestAccess off
+sudo /usr/sbin/cupsctl --no-share-printers
+sudo /usr/bin/lpstat -p | awk '{print $2}'| /usr/bin/xargs -I{} lpadmin -p {} -o printer-is-shared=false 
+sudo /usr/sbin/systemsetup -setremoteappleevents off
+sudo /bin/launchctl disable system/com.apple.AEServer
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -stop 
+sudo /bin/launchctl disable system/com.apple.screensharing
+sudo /bin/launchctl disable system/com.apple.smbd
+sudo /bin/launchctl disable system/com.openssh.sshd
+sudo /bin/launchctl disable system/com.apple.netbiosd.plist
+sudo /bin/chmod -RN /var/audit
+sudo /bin/chmod -N /var/audit
+sudo /bin/launchctl enable system/com.apple.auditd
+sudo /bin/launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.auditd.plist  
+sudo /usr/sbin/audit -i
+sudo /bin/chmod -N /etc/security/audit_control
+sudo /usr/bin/chgrp wheel /etc/security/audit_control  
+sudo /bin/chmod 440 /etc/security/audit_control
+sudo /usr/sbin/chown root /etc/security/audit_control 
+sudo /usr/bin/chgrp -R wheel /var/audit/*
+sudo /bin/chmod 440 /var/audit/*
+sudo /usr/bin/chgrp wheel /var/audit
+sudo /usr/sbin/chown root /var/audit
+sudo /bin/chmod 700 /var/audit
+sudo /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:7d/' /etc/security/audit_control; /usr/sbin/audit -s
+sudo /usr/sbin/nvram boot-args="" 
+sudo /usr/bin/security authorizationdb write system.login.screensaver "use-login-window-ui"
+sudo pmset -a destroyfvkeyonstandby 1
+sudo pmset -a hibernatemode 25
+sudo pmset -a powernap 0
+sudo pmset -a standby 0
+sudo pmset -a standbydelay 0
+sudo pmset -a autopoweroff 0
+sudo pmset -a womp 0
+sudo pmset -a sleep 1
+sudo pmset -a displaysleep 2
+sudo pmset -a networkoversleep 0
+sudo /usr/bin/defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd LocationServicesEnabled -bool true; /bin/launchctl kickstart -k system/com.apple.locationd
+sudo /usr/bin/defaults write /Library/Preferences/com.apple.locationmenu.plist ShowSystemServices -bool true
+sudo ifconfig en0 -arp
+sudo launchctl disable system/netbiosd
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
+sudo /usr/sbin/systemsetup -f -setremotelogin off >/dev/null
+sudo /bin/launchctl disable system/com.openssh.sshd
+sudo launchctl config user umask 077
+cd /Users
+sudo chmod og-rwx *
+sudo shutdown -r now -o
