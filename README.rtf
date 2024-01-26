@@ -546,7 +546,14 @@ Added dropboxexperiment.com to the Global Allow List in Cisco Umbrella.
 Added the Security Technical Implementation Guides (STIGs) for U_Apple_iOS-iPadOS_17_V1R1_STIG.zip and U_Apple_macOS_13_V1R3_STIG.zip from public.cyber.mil - really good!
 
 changelog 12/14/23
-Apple changed something with mobile hotspots and how their systems work… so I needed to enable ipv6 and some other protocols…. The hunt is on for what changed. I think it was done to facilitate QUIC protocol.  More research is needed…. I just know I needed to re-enable ipv6 on Wi-fi and Thunderbolt Bridge and remove all ipv6 blocking rules and enable ipv6 on DNS and it looks like sscopmce protocol is used in lookup… which I had disabled. Still finding what changed… Vallum is broken for my mobile hotspot at least. 	
+Apple changed something with mobile hotspots and how their systems work… so I needed to enable ipv6 and some other protocols…. The hunt is on for what changed. I think it was done to facilitate QUIC protocol.  More research is needed…. I just know I needed to re-enable ipv6 on Wi-fi and Thunderbolt Bridge and remove all ipv6 blocking rules and enable ipv6 on DNS and it looks like sscopmce protocol is used in lookup… which I had disabled. Still finding what changed… Vallum is broken for my mobile hotspot at least.
+
+Changelog 12/19/23
+I removed the NEW_Vallum and NEW_Murus rules as I can’t find what changed and I think it makes the machine insecure own order to get an internet connection. 
+
+Changelog 1/26/24
+New Vallum and Vallum_UmbrellaDNSOnly rule… less restrictive with what process can talk to Umbrella servers. 
+Created a miniscriot version without some of the archaic permission edits. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
