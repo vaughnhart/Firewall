@@ -1,4 +1,4 @@
-These firewall rules are based around Cisco Umbrella or OpenDNS Umbrella  Prosumer. 
+eThese firewall rules are based around Cisco Umbrella or OpenDNS Umbrella  Prosumer. 
 https://www.opendns.com/home-internet-security/
 https://docs.umbrella.com/deployment-umbrella/docs/2-prerequisites-update#section-network-access
 You will need a license for Murus Pro… which should bundle Vallum firewall as well.You’ll need them both.  This is a restricted IPv4 only config.
@@ -524,7 +524,7 @@ changelog 10/30/23
 Added the following iCloud sites to the Cisco Umbrella Global Allow List: 
 p25-content.icloud.com
 p23-content.icloud.com
-p27-content.icloud.com
+p27-content.icloud.comaa
 p63-content.icloud.com
 p59-sharedstreams.icloud.com 
 
@@ -556,6 +556,19 @@ New Vallum and Vallum_UmbrellaDNSOnly rules… less restrictive with what proces
 New Murus and Murus_UmbrellaDNSOnly rules… added the block for CBT (protocol 7).
 Added the theflixertv.to - free movie site to Umbrella Allow List. 
 Created a miniscriot version without some of the archaic permission edits. 
+
+Changelog 1/29/24
+Shaking Vallum rules down to one profile for UmbrellaDNS_Only:
+Adding inbound rule app fingerprint for port 53 for Captive Network Assistant and Cisco Secure Client
+Adding inbound rule app fingerprint for group Umbrella (all addresses whitelist) for Captive Network Assistant and Cisco Secure Client
+Removing ipv6 blocks for inbound 
+Making inbound DHCP ipv6 compatible - 67-68, 546-547
+Making outbound DHCP ipv6 compatible - 67-68, 546-547
+Changing outbound Captive Network Assistant to ipv6 compatible 
+Restricting Umbrella to the Cisco Secure Client and removing old app signatures for Umbrella Client
+Removed ipv6 outbound blocks
+Adding any rule for protocol version on outbound rules. 
+
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
