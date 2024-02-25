@@ -524,7 +524,7 @@ changelog 10/30/23
 Added the following iCloud sites to the Cisco Umbrella Global Allow List: 
 p25-content.icloud.com
 p23-content.icloud.com
-p27-content.icloud.comaa
+p27-content.icloud.com
 p63-content.icloud.com
 p59-sharedstreams.icloud.com 
 
@@ -579,10 +579,19 @@ Changelog 2/21/24
 Fixed some multicast/igmp/ipv6 rules in Murus and Murus_UmbrellaDNSOnly. Still have to fix Vallum… 
 
 Changelog 2/24/24
-Added as per firewalld (Linux) and the existing protocol 41 block the ip address for 6to4 tunnels - 2002::/16 and 192.88.99.0/24
+Added as per firewalld (Linux) and the existing protocol 41 block the ip addresses for 6to4 tunnels - 2002::/16 and 192.88.99.0/24
 https://www.rfc-editor.org/rfc/rfc3964
 https://insights.sei.cmu.edu/blog/exfiltration-with-ipv6-tunnels-on-windows/
 
+Changelog 2/25/24
+Added to Ban in Vallum_UmbrellaDNSOnly as per firewalld (Linux) and the existing protocol 41 block the ip addresses for 6to4 tunnels - 2002::/16 and 192.88.99.0/24
+https://www.rfc-editor.org/rfc/rfc3964
+https://insights.sei.cmu.edu/blog/exfiltration-with-ipv6-tunnels-on-windows/
+Added an outbound rule to allow Cisco Secure Client to connect to any address on port 53 for DNS lookup. 
+Added a rule to all the Loop Group - Trusted System Process outbound connections. 
+Changed DHCP to allow outbound 67, 547 for ipv4 and ipv6
+Changed DHCP tp allow inbound 68,  546 for ipv4 and ipv6 respectively. 
+There may be an issue with hotspot DHCP (a protocol or apple process that bypasses/escapes certain rules)  and iCloud syncing (a hidden process I’m looking for). 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
