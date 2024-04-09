@@ -1,4 +1,12 @@
 #! /bin/zsh
+
+sudo /bin/chmod -N /var/audit
+sudo /bin/launchctl enable system/com.apple.auditd
+sudo /bin/launchctl bootstrap system
+sudo /usr/sbin/audit -i
+sudo /usr/bin/chgrp -R wheel /var/audit/*
+sudo /bin/chmod 440 /var/audit/*
+sudo /usr/sbin/chown -R root /var/audit/* 
 sudo scutil --set ComputerName 보쌈애인
 sudo scutil --set LocalHostName BoSsamLover
 sudo scutil --set HostName 보쌈애인
@@ -35,8 +43,7 @@ sudo /usr/bin/chgrp wheel /var/audit
 sudo /usr/sbin/chown root /var/audit
 sudo /bin/chmod 700 /var/audit
 sudo /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:7d/' /etc/security/audit_control; /usr/sbin/audit -s
-sudo /usr/sbin/nvram boot-args="" 
-sudo /usr/bin/security authorizationdb write system.login.screensaver "use-login-window-ui"
+sudo /usr/sbin/nvram boot-args=""
 sudo pmset -a destroyfvkeyonstandby 1
 sudo pmset -a hibernatemode 25
 sudo pmset -a powernap 0
