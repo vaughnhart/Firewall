@@ -56,6 +56,7 @@ sudo pmset -a displaysleep 2
 sudo pmset -a networkoversleep 0
 sudo /usr/bin/defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd LocationServicesEnabled -bool true; /bin/launchctl kickstart -k system/com.apple.locationd
 sudo /usr/bin/defaults write /Library/Preferences/com.apple.locationmenu.plist ShowSystemServices -bool true
+sudo /usr/bin/security authorizationdb write system.login.screensaver "authenticate-session-owner"
 sudo ifconfig en0 -arp
 sudo launchctl disable system/netbiosd
 sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
