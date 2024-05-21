@@ -652,11 +652,18 @@ Changelog 5/9/24
 Created a UmbrellaDNSOnly_Haley SSH profile that has the Haley SSH list added back to it. Sometimes the list causes a memory error on my M1 MacBook Air (2020). But it might run fine on all your newer (2021+) machines. 
 http://iplists.firehol.org/?ipset=haley_ssh 
 
-Changelog 5/9/24
-The Murus_UmbrellaDNSOnly_withHaleySSH rules keeps failing on my system… so I am editing some lists and moving some things to the Ban list in Vallum:
+Changelog 5/21/24
+I am getting some errors with Murus and Murus_UmbrellaDNSOnly loading on system startup… so I am removing some lists that never update. 
+I am doing the following to the Ban list in Vallum
 185.94.190.158 from https://secureupdates.checkpoint.com/IP-list/IP-blacklist.txt
 192.9.135.73 from https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt
-
+I have removed the following list from version of Murus:
+Removed CruzitWeb Attacks which hasn’t been updated since 2023 http://iplists.firehol.org/?ipset=cruzit_web_attacks
+Removed SpamHaus_edrop for duplicates with SpamHaud_Drop  http://iplists.firehol.org/?ipset=spamhaus_edrop
+Removed CyberCrime for duploicates with Firehol_WebClient http://iplists.firehol.org/?ipset=cybercrime
+Removed XRoxy_30D which hasn’t been updated since 2023 http://iplists.firehol.org/?ipset=xroxy_30d
+Removed the direct connection to BinaryDefense… only pulling the Firehol list. http://iplists.firehol.org/?ipset=bds_atif
+I have added Haley_SSH to all Murus Versions - http://iplists.firehol.org/?ipset=haley_ssh
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 
