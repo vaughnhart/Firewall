@@ -834,7 +834,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.mcxloginscripts</string>
 			<key>PayloadUUID</key>
-			<string>3798FB68-35E4-4E59-8AC8-52560AEF1636</string>
+			<string>80546548-6312-4A1A-B751-0E69BBBBD255</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>loginscripts</key>
@@ -1007,6 +1007,96 @@
 					<string>test</string>
 				</dict>
 			</array>
+			<key>logoutscripts</key>
+			<array>
+				<dict>
+					<key>filedata</key>
+					<data>
+					IyEgL2Jpbi96c2gKc3VkbyAvYmluL2xhdW5j
+					aGN0bCBkaXNhYmxlIHN5c3RlbS9vcmcuYXBh
+					Y2hlLmh0dHBkCnN1ZG8gL2Jpbi9sYXVuY2hj
+					dGwgZGlzYWJsZSBzeXN0ZW0vY29tLmFwcGxl
+					Lm5mc2QKc3VkbyAvYmluL2xhdW5jaGN0bCBk
+					aXNhYmxlIHN5c3RlbS9jb20uYXBwbGUudGZ0
+					cGQKc3VkbyAvYmluL2xhdW5jaGN0bCBsb2Fk
+					IC13IC9TeXN0ZW0vTGlicmFyeS9MYXVuY2hE
+					YWVtb25zL2NvbS5hcHBsZS50aW1lZC5wbGlz
+					dApzdWRvIC91c3IvYmluL3NlY3VyaXR5IGF1
+					dGhvcml6YXRpb25kYiB3cml0ZSBzeXN0ZW0u
+					bG9naW4uc2NyZWVuc2F2ZXIgInVzZS1sb2dp
+					bi13aW5kb3ctdWkiCnN1ZG8gL2Jpbi9sYXVu
+					Y2hjdGwgZGlzYWJsZSBzeXN0ZW0vY29tLmFw
+					cGxlLnV1Y3AKc3VkbyAvYmluL2xhdW5jaGN0
+					bCB1bmxvYWQgLXcgL1N5c3RlbS9MaWJyYXJ5
+					L0xhdW5jaERhZW1vbnMvY29tLmFwcGxlLk9E
+					U0FnZW50LnBsaXN0IApzdWRvIC91c3Ivc2Jp
+					bi9zeXNhZG1pbmN0bCAtc21iR3Vlc3RBY2Nl
+					c3Mgb2ZmCnN1ZG8gL3Vzci9zYmluL2N1cHNj
+					dGwgLS1uby1zaGFyZS1wcmludGVycwpzdWRv
+					IC91c3IvYmluL2xwc3RhdCAtcCB8IGF3ayAn
+					e3ByaW50ICQyfSd8IC91c3IvYmluL3hhcmdz
+					IC1Je30gbHBhZG1pbiAtcCB7fSAtbyBwcmlu
+					dGVyLWlzLXNoYXJlZD1mYWxzZSAKc3VkbyAv
+					dXNyL3NiaW4vc3lzdGVtc2V0dXAgLXNldHJl
+					bW90ZWFwcGxlZXZlbnRzIG9mZgpzdWRvIC9i
+					aW4vbGF1bmNoY3RsIGRpc2FibGUgc3lzdGVt
+					L2NvbS5hcHBsZS5BRVNlcnZlcgpzdWRvIC9T
+					eXN0ZW0vTGlicmFyeS9Db3JlU2VydmljZXMv
+					UmVtb3RlTWFuYWdlbWVudC9BUkRBZ2VudC5h
+					cHAvQ29udGVudHMvUmVzb3VyY2VzL2tpY2tz
+					dGFydCAtZGVhY3RpdmF0ZSAtc3RvcCAKc3Vk
+					byAvYmluL2xhdW5jaGN0bCBkaXNhYmxlIHN5
+					c3RlbS9jb20uYXBwbGUuc2NyZWVuc2hhcmlu
+					ZwpzdWRvIC9iaW4vbGF1bmNoY3RsIGRpc2Fi
+					bGUgc3lzdGVtL2NvbS5hcHBsZS5zbWJkCnN1
+					ZG8gL2Jpbi9sYXVuY2hjdGwgZGlzYWJsZSBz
+					eXN0ZW0vY29tLm9wZW5zc2guc3NoZApzdWRv
+					IC9iaW4vbGF1bmNoY3RsIGRpc2FibGUgc3lz
+					dGVtL2NvbS5hcHBsZS5uZXRiaW9zZC5wbGlz
+					dApzdWRvIC9iaW4vbGF1bmNoY3RsIGJvb3Rz
+					dHJhcCBzeXN0ZW0gL1N5c3RlbS9MaWJyYXJ5
+					L0xhdW5jaERhZW1vbnMvY29tLmFwcGxlLmF1
+					ZGl0ZC5wbGlzdCAgCnN1ZG8gL3Vzci9zYmlu
+					L2F1ZGl0IC1pCnN1ZG8gcG1zZXQgLWEgZGVz
+					dHJveWZ2a2V5b25zdGFuZGJ5IDEKc3VkbyBw
+					bXNldCAtYSBoaWJlcm5hdGVtb2RlIDI1CnN1
+					ZG8gcG1zZXQgLWEgcG93ZXJuYXAgMApzdWRv
+					IHBtc2V0IC1hIHN0YW5kYnkgMApzdWRvIHBt
+					c2V0IC1hIHN0YW5kYnlkZWxheSAwCnN1ZG8g
+					cG1zZXQgLWEgYXV0b3Bvd2Vyb2ZmIDAKc3Vk
+					byBwbXNldCAtYSB3b21wIDAKc3VkbyBwbXNl
+					dCAtYSBzbGVlcCAxCnN1ZG8gcG1zZXQgLWEg
+					ZGlzcGxheXNsZWVwIDIKc3VkbyBwbXNldCAt
+					YSBuZXR3b3Jrb3ZlcnNsZWVwIDAKc3VkbyAv
+					dXNyL2Jpbi9kZWZhdWx0cyB3cml0ZSAvdmFy
+					L2RiL2xvY2F0aW9uZC9MaWJyYXJ5L1ByZWZl
+					cmVuY2VzL0J5SG9zdC9jb20uYXBwbGUubG9j
+					YXRpb25kIExvY2F0aW9uU2VydmljZXNFbmFi
+					bGVkIC1ib29sIHRydWU7IC9iaW4vbGF1bmNo
+					Y3RsIGtpY2tzdGFydCAtayBzeXN0ZW0vY29t
+					LmFwcGxlLmxvY2F0aW9uZApzdWRvIC91c3Iv
+					YmluL2RlZmF1bHRzIHdyaXRlIC9MaWJyYXJ5
+					L1ByZWZlcmVuY2VzL2NvbS5hcHBsZS5sb2Nh
+					dGlvbm1lbnUucGxpc3QgU2hvd1N5c3RlbVNl
+					cnZpY2VzIC1ib29sIHRydWUKc3VkbyAvdXNy
+					L2Jpbi9zZWN1cml0eSBhdXRob3JpemF0aW9u
+					ZGIgd3JpdGUgc3lzdGVtLmxvZ2luLnNjcmVl
+					bnNhdmVyICJhdXRoZW50aWNhdGUtc2Vzc2lv
+					bi1vd25lciIKc3VkbyBpZmNvbmZpZyBlbjAg
+					LWFycApzdWRvIGxhdW5jaGN0bCBkaXNhYmxl
+					IHN5c3RlbS9uZXRiaW9zZApzdWRvIGxhdW5j
+					aGN0bCB1bmxvYWQgLXcgL1N5c3RlbS9MaWJy
+					YXJ5L0xhdW5jaERhZW1vbnMvY29tLmFwcGxl
+					Lm5ldGJpb3NkLnBsaXN0CnN1ZG8gL3Vzci9z
+					YmluL3N5c3RlbXNldHVwIC1mIC1zZXRyZW1v
+					dGVsb2dpbiBvZmYgPi9kZXYvbnVsbApzdWRv
+					IC9iaW4vbGF1bmNoY3RsIGRpc2FibGUgc3lz
+					dGVtL2NvbS5vcGVuc3NoLnNzaGQK
+					</data>
+					<key>filename</key>
+					<string>shutdown</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>NSToolbar Configuration com.apple.print.add.toolbar</key>
@@ -1081,7 +1171,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>B9A2AC38-5E8E-4A45-AA42-7A4B2FB28F1E</string>
+	<string>CD519287-276A-4B3B-96BF-096CB8DB4A4C</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
