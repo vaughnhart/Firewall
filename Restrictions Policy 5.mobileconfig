@@ -472,8 +472,14 @@
 			<false/>
 			<key>BlockStoragePolicy</key>
 			<integer>2</integer>
+			<key>BookmarksCollectionsIncludeAddressBook</key>
+			<false/>
+			<key>BookmarksCollectionsIncludeRendezvous</key>
+			<false/>
 			<key>ConfirmClosingMultiplePages</key>
 			<false/>
+			<key>DidDisableIndividualExtensionsAfterRemovingOnOffSwitchIfNecessary</key>
+			<true/>
 			<key>DidShowWhatsNewInSafari</key>
 			<true/>
 			<key>DownloadsClearingPolicy</key>
@@ -495,7 +501,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.Safari</string>
 			<key>PayloadUUID</key>
-			<string>577592E7-6141-4C17-82E6-C93787F8A520</string>
+			<string>2A8426CF-B67C-4194-998E-D63EC61E0085</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>TabCreationPolicy</key>
@@ -1177,7 +1183,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>0000C02C-A713-4CEC-BB4C-A9BE0CE72A26</string>
+	<string>61615E08-FC8B-4E6F-B6EE-0AE3B9EBA7BE</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
