@@ -329,6 +329,8 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>AppleShowAllExtensions</key>
+			<true/>
 			<key>AppleShowScrollBars</key>
 			<string>Automatic</string>
 			<key>PayloadDisplayName</key>
@@ -338,7 +340,7 @@
 			<key>PayloadType</key>
 			<string>.GlobalPreferences</string>
 			<key>PayloadUUID</key>
-			<string>3DA779AE-1704-47B5-AD35-CDD359791B01</string>
+			<string>06BCA890-534F-48D4-8A6B-E368C56DE725</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>com.apple.autologout.AutoLogOutDelay</key>
@@ -507,7 +509,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>1F205BF6-769F-4695-BC6D-A19625487AC4</string>
+			<string>6816219A-9BBA-4DF8-8750-0F7878026D8D</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -678,6 +680,8 @@
 			<real>1.5</real>
 		</dict>
 		<dict>
+			<key>DestroyFVKeyOnStandby</key>
+			<true/>
 			<key>DisableGuestAccount</key>
 			<true/>
 			<key>PayloadDisplayName</key>
@@ -687,9 +691,11 @@
 			<key>PayloadType</key>
 			<string>com.apple.MCX</string>
 			<key>PayloadUUID</key>
-			<string>811DA525-453D-4CAB-B1E9-6119B8B626A0</string>
+			<string>813EFC5F-9772-43C5-B2D8-51B8FCB8C974</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>RequireAdminForIBSS</key>
+			<true/>
 			<key>dontAllowFDEDisable</key>
 			<true/>
 			<key>timeServer</key>
@@ -1171,7 +1177,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>CD519287-276A-4B3B-96BF-096CB8DB4A4C</string>
+	<string>0000C02C-A713-4CEC-BB4C-A9BE0CE72A26</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
