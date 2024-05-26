@@ -1167,6 +1167,20 @@
 			<key>wvous-tr-modifier</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>App Store settings</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.appstore.C05721B3-5999-4866-942F-928AA3DE14F1</string>
+			<key>PayloadType</key>
+			<string>com.apple.appstore</string>
+			<key>PayloadUUID</key>
+			<string>C05721B3-5999-4866-942F-928AA3DE14F1</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>restrict-store-require-admin-to-install</key>
+			<true/>
+		</dict>
 	</array>
 	<key>PayloadDescription</key>
 	<string>This payload disables iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
@@ -1183,7 +1197,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>61615E08-FC8B-4E6F-B6EE-0AE3B9EBA7BE</string>
+	<string>025F0E8C-F39C-4FA4-8DFD-0BCF42507935</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
