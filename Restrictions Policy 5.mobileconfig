@@ -1181,6 +1181,108 @@
 			<key>restrict-store-require-admin-to-install</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>GKFeatureAccountModificationAllowed</key>
+			<false/>
+			<key>GKFeatureAddingGameCenterFriendsAllowed</key>
+			<false/>
+			<key>GKFeatureGameCenterAllowed</key>
+			<false/>
+			<key>GKFeatureMultiplayerGamingAllowed</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>Parental Controls: Game Center</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.gamed.F6A1DDCA-DE68-43FB-B67E-C6EE129ADA3A</string>
+			<key>PayloadType</key>
+			<string>com.apple.gamed</string>
+			<key>PayloadUUID</key>
+			<string>F6A1DDCA-DE68-43FB-B67E-C6EE129ADA3A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>ShareKit</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.ShareKitHelper.18DB950B-9322-409D-9027-D2DB80A7F4C0</string>
+			<key>PayloadType</key>
+			<string>com.apple.ShareKitHelper</string>
+			<key>PayloadUUID</key>
+			<string>18DB950B-9322-409D-9027-D2DB80A7F4C0</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SHKDeniedShareServices</key>
+			<array>
+				<string>com.apple.share.AirDrop</string>
+				<string>com.apple.share.Facebook</string>
+				<string>com.apple.share.Twitter</string>
+				<string>com.apple.share.Mail</string>
+				<string>com.apple.share.Video</string>
+				<string>com.apple.share.addtoaperture</string>
+				<string>com.apple.share.readlater</string>
+				<string>com.apple.share.addtoaperture</string>
+			</array>
+		</dict>
+		<dict>
+			<key>AllowedTeamIdentifiers</key>
+			<array>
+				<string>DE8Y96K9QP</string>
+				<string>RNLG254GCK</string>
+			</array>
+			<key>PayloadDisplayName</key>
+			<string>System Extension Policy</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.system-extension-policy.12252FF5-D051-49E6-8B57-136F3E0CB0D7</string>
+			<key>PayloadType</key>
+			<string>com.apple.system-extension-policy</string>
+			<key>PayloadUUID</key>
+			<string>12252FF5-D051-49E6-8B57-136F3E0CB0D7</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>DisableOverride</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>System Policy: Managed</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.systempolicy.managed.9CF4385F-A774-4F40-9DFF-CD73FCD9C28B</string>
+			<key>PayloadType</key>
+			<string>com.apple.systempolicy.managed</string>
+			<key>PayloadUUID</key>
+			<string>9CF4385F-A774-4F40-9DFF-CD73FCD9C28B</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>DoNotOfferNewDisksForBackup</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>Time Machine</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.TimeMachine.CE5541F7-FD00-43A5-B8D0-77FE63D28FB7</string>
+			<key>PayloadType</key>
+			<string>com.apple.TimeMachine</string>
+			<key>PayloadUUID</key>
+			<string>CE5541F7-FD00-43A5-B8D0-77FE63D28FB7</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>System Preferences: Security</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.preference.security.25D5E803-9CC8-46C1-8306-A69CC08266A3</string>
+			<key>PayloadType</key>
+			<string>com.apple.preference.security</string>
+			<key>PayloadUUID</key>
+			<string>25D5E803-9CC8-46C1-8306-A69CC08266A3</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>dontAllowLockMessageUI</key>
+			<true/>
+		</dict>
 	</array>
 	<key>PayloadDescription</key>
 	<string>This payload disables iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
@@ -1197,7 +1299,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>025F0E8C-F39C-4FA4-8DFD-0BCF42507935</string>
+	<string>B06B752B-F26D-4AEE-826B-F8DA67E25E4D</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
