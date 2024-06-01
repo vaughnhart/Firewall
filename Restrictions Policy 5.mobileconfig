@@ -413,6 +413,8 @@
 			<string>IPAddress</string>
 			<key>EnableExternalAccounts</key>
 			<false/>
+			<key>LocalUserLoginEnabled</key>
+			<true/>
 			<key>LoginwindowText</key>
 			<string>Vaughn A. Hart - vaughn@aegisitnyc.com - 646-284-4291</string>
 			<key>PayloadDisplayName</key>
@@ -422,7 +424,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.loginwindow</string>
 			<key>PayloadUUID</key>
-			<string>8A9C4E34-2E9D-4E56-AA6B-3143D34770C8</string>
+			<string>F0C25F8D-CFA8-4B1E-B478-A2BDCD425A9D</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>SHOWFULLNAME</key>
@@ -515,7 +517,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>6816219A-9BBA-4DF8-8750-0F7878026D8D</string>
+			<string>5FB00670-B57C-487F-B6B3-4600778CC2FC</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -652,6 +654,8 @@
 			<false/>
 			<key>allowiTunesFileSharing</key>
 			<false/>
+			<key>enforcedFingerprintTimeout</key>
+			<integer>1</integer>
 			<key>forceAirDropUnmanaged</key>
 			<true/>
 			<key>forceAirPlayOutgoingRequestsPairingPassword</key>
@@ -826,10 +830,12 @@
 			<key>PayloadType</key>
 			<string>com.apple.finder</string>
 			<key>PayloadUUID</key>
-			<string>329F7E0D-9F12-4068-A719-58912B38BC17</string>
+			<string>AD743920-2F58-418C-9969-28D448A6B8A1</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>ProhibitBurn</key>
+			<true/>
+			<key>ProhibitConnectTo</key>
 			<true/>
 			<key>ShowHardDrivesOnDesktop</key>
 			<true/>
@@ -1299,7 +1305,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>B06B752B-F26D-4AEE-826B-F8DA67E25E4D</string>
+	<string>8AE61A93-6C7E-45A7-9AF2-2688158BF9D3</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
