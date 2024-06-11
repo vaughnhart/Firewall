@@ -517,7 +517,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>5FB00670-B57C-487F-B6B3-4600778CC2FC</string>
+			<string>8177E623-3E7A-46DA-BCB2-1B96AE845C56</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -537,6 +537,8 @@
 			<key>allowAssistant</key>
 			<false/>
 			<key>allowAutoUnlock</key>
+			<false/>
+			<key>allowBluetoothModification</key>
 			<false/>
 			<key>allowBluetoothSharingModification</key>
 			<false/>
@@ -1305,7 +1307,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>8AE61A93-6C7E-45A7-9AF2-2688158BF9D3</string>
+	<string>D80A4220-AE5F-46E3-8E9D-6131B77940EF</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
