@@ -195,6 +195,10 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>AllowSigned</key>
+			<false/>
+			<key>AllowSignedApp</key>
+			<false/>
 			<key>EnableFirewall</key>
 			<true/>
 			<key>EnableLogging</key>
@@ -210,7 +214,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.security.firewall</string>
 			<key>PayloadUUID</key>
-			<string>267B2E79-E1D1-4C8F-9C99-563B6188E9AE</string>
+			<string>D828F1FB-453E-40DF-8E4B-4C3F87F132DD</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
@@ -517,7 +521,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>8177E623-3E7A-46DA-BCB2-1B96AE845C56</string>
+			<string>13950D01-6B47-4448-902C-BF89EBE65F03</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -568,6 +572,8 @@
 			<false/>
 			<key>allowDictation</key>
 			<false/>
+			<key>allowEnterpriseAppTrust</key>
+			<false/>
 			<key>allowEnterpriseBookBackup</key>
 			<false/>
 			<key>allowEnterpriseBookMetadataSync</key>
@@ -596,6 +602,8 @@
 			<false/>
 			<key>allowLockScreenTodayView</key>
 			<false/>
+			<key>allowMailPrivacyProtection</key>
+			<false/>
 			<key>allowMarketplaceAppInstallation</key>
 			<false/>
 			<key>allowMusicService</key>
@@ -616,6 +624,8 @@
 			<false/>
 			<key>allowPasswordSharing</key>
 			<false/>
+			<key>allowPhotoStream</key>
+			<false/>
 			<key>allowPodcasts</key>
 			<false/>
 			<key>allowPredictiveKeyboard</key>
@@ -625,6 +635,8 @@
 			<key>allowProximitySetupToNewDevice</key>
 			<false/>
 			<key>allowRadioService</key>
+			<false/>
+			<key>allowRapidSecurityResponseRemoval</key>
 			<false/>
 			<key>allowRemoteAppPairing</key>
 			<false/>
@@ -673,6 +685,8 @@
 			<key>forceOnDeviceOnlyDictation</key>
 			<true/>
 			<key>forceOnDeviceOnlyTranslation</key>
+			<true/>
+			<key>forcePreserveESIMOnErase</key>
 			<true/>
 			<key>forceWatchWristDetection</key>
 			<true/>
@@ -1151,13 +1165,19 @@
 			<key>PayloadType</key>
 			<string>com.apple.dock</string>
 			<key>PayloadUUID</key>
-			<string>D4277D4C-6643-4B82-81CC-D2C97DC19478</string>
+			<string>2FB71947-ADA5-4690-AA00-76BB7959BFE3</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>autohide</key>
 			<true/>
 			<key>autohide-immutable</key>
 			<true/>
+			<key>launchanim-immutable</key>
+			<true/>
+			<key>mineffect</key>
+			<string>Genie Effect</string>
+			<key>orientation</key>
+			<string>left</string>
 			<key>wvous-bl-corner</key>
 			<integer>0</integer>
 			<key>wvous-bl-modifier</key>
@@ -1217,7 +1237,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.ShareKitHelper</string>
 			<key>PayloadUUID</key>
-			<string>18DB950B-9322-409D-9027-D2DB80A7F4C0</string>
+			<string>5CC6A0B9-BD80-4180-B58F-FA4E2C9549D6</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>SHKDeniedShareServices</key>
@@ -1229,7 +1249,7 @@
 				<string>com.apple.share.Video</string>
 				<string>com.apple.share.addtoaperture</string>
 				<string>com.apple.share.readlater</string>
-				<string>com.apple.share.addtoaperture</string>
+				<string>com.apple.share.SinaWeibo</string>
 			</array>
 		</dict>
 		<dict>
@@ -1291,6 +1311,48 @@
 			<key>dontAllowLockMessageUI</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Submit Diagnostic Information</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.SubmitDiagInfo.D255C9E8-D5A8-4F7D-8631-5C36EB12A72B</string>
+			<key>PayloadType</key>
+			<string>com.apple.SubmitDiagInfo</string>
+			<key>PayloadUUID</key>
+			<string>D255C9E8-D5A8-4F7D-8631-5C36EB12A72B</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Universal Access</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.universalaccess.615BE0D9-773B-448B-A37C-356042D78159</string>
+			<key>PayloadType</key>
+			<string>com.apple.universalaccess</string>
+			<key>PayloadUUID</key>
+			<string>615BE0D9-773B-448B-A37C-356042D78159</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>closeViewHotkeysEnabled</key>
+			<true/>
+			<key>flashScreen</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Siri</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.Siri.DD803314-C95E-4571-BA13-944862164748</string>
+			<key>PayloadType</key>
+			<string>com.apple.Siri</string>
+			<key>PayloadUUID</key>
+			<string>DD803314-C95E-4571-BA13-944862164748</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>UserHasDeclinedEnable</key>
+			<true/>
+		</dict>
 	</array>
 	<key>PayloadDescription</key>
 	<string>This payload disables iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
@@ -1307,7 +1369,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>D80A4220-AE5F-46E3-8E9D-6131B77940EF</string>
+	<string>52FCFC50-CEC2-41C0-8A9A-1190CEA1FF4A</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
