@@ -428,9 +428,11 @@
 			<key>PayloadType</key>
 			<string>com.apple.loginwindow</string>
 			<key>PayloadUUID</key>
-			<string>F0C25F8D-CFA8-4B1E-B478-A2BDCD425A9D</string>
+			<string>791A0706-BB79-4071-906C-27B5C8644862</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>RetriesUntilHint</key>
+			<integer>0</integer>
 			<key>SHOWFULLNAME</key>
 			<true/>
 			<key>TALLogoutSavesState</key>
@@ -521,7 +523,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>13950D01-6B47-4448-902C-BF89EBE65F03</string>
+			<string>9B48B644-3216-48E0-A0C8-1C8EA5EAD1A3</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -670,8 +672,6 @@
 			<false/>
 			<key>enforcedFingerprintTimeout</key>
 			<integer>1</integer>
-			<key>forceAirDropUnmanaged</key>
-			<true/>
 			<key>forceAirPlayOutgoingRequestsPairingPassword</key>
 			<true/>
 			<key>forceAutomaticDateAndTime</key>
@@ -1311,7 +1311,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>4D6BDB6D-3B2A-4BFB-8F8D-8F3D9D22CC50</string>
+	<string>9D63D6C5-2367-492F-9F69-5D369C9E007F</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
