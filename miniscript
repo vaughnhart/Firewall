@@ -31,7 +31,8 @@ sudo /bin/launchctl disable system/com.apple.netbiosd.plist
 sudo /bin/chmod -RN /var/audit
 sudo /bin/chmod -N /var/audit
 sudo /bin/launchctl enable system/com.apple.auditd
-sudo /bin/launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.auditd.plist  
+sudo /bin/launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.auditd.plist
+sudo /usr/bin/defaults -currentHost read com.apple.Bluetooth PrefKeyServicesEnabled  
 sudo /usr/sbin/audit -i
 sudo /bin/chmod -N /etc/security/audit_control
 sudo /usr/bin/chgrp wheel /etc/security/audit_control  
@@ -61,7 +62,6 @@ sudo ifconfig en0 -arp
 sudo launchctl disable system/netbiosd
 sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
 sudo /usr/sbin/systemsetup -f -setremotelogin off >/dev/null
-sudo /bin/launchctl disable system/com.openssh.sshd
 sudo launchctl config user umask 077
 cd /Users
 sudo chmod og-rwx *

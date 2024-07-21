@@ -868,7 +868,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.mcxloginscripts</string>
 			<key>PayloadUUID</key>
-			<string>C25C5BA1-C87E-4FC6-B6CD-5B944AFE79F5</string>
+			<string>AF5DA4E8-AFAF-41DF-80E8-44F02107CD0F</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>loginscripts</key>
@@ -927,49 +927,49 @@
 					L2NvbS5hcHBsZS5hdWRpdGQKc3VkbyAvYmlu
 					L2xhdW5jaGN0bCBib290c3RyYXAgc3lzdGVt
 					IC9TeXN0ZW0vTGlicmFyeS9MYXVuY2hEYWVt
-					b25zL2NvbS5hcHBsZS5hdWRpdGQucGxpc3Qg
-					CnN1ZG8gL3Vzci9zYmluL252cmFtIGJvb3Qt
-					YXJncz0iIgpzdWRvIHBtc2V0IC1hIGRlc3Ry
-					b3lmdmtleW9uc3RhbmRieSAxCnN1ZG8gcG1z
-					ZXQgLWEgaGliZXJuYXRlbW9kZSAyNQpzdWRv
-					IHBtc2V0IC1hIHBvd2VybmFwIDAKc3VkbyBw
-					bXNldCAtYSBzdGFuZGJ5IDAKc3VkbyBwbXNl
-					dCAtYSBzdGFuZGJ5ZGVsYXkgMApzdWRvIHBt
-					c2V0IC1hIGF1dG9wb3dlcm9mZiAwCnN1ZG8g
-					cG1zZXQgLWEgd29tcCAwCnN1ZG8gcG1zZXQg
-					LWEgc2xlZXAgMQpzdWRvIHBtc2V0IC1hIGRp
-					c3BsYXlzbGVlcCAyCnN1ZG8gcG1zZXQgLWEg
-					bmV0d29ya292ZXJzbGVlcCAwCnN1ZG8gL3Vz
-					ci9iaW4vZGVmYXVsdHMgd3JpdGUgL3Zhci9k
-					Yi9sb2NhdGlvbmQvTGlicmFyeS9QcmVmZXJl
-					bmNlcy9CeUhvc3QvY29tLmFwcGxlLmxvY2F0
-					aW9uZCBMb2NhdGlvblNlcnZpY2VzRW5hYmxl
-					ZCAtYm9vbCB0cnVlOyAvYmluL2xhdW5jaGN0
-					bCBraWNrc3RhcnQgLWsgc3lzdGVtL2NvbS5h
-					cHBsZS5sb2NhdGlvbmQKc3VkbyAvdXNyL2Jp
-					bi9kZWZhdWx0cyB3cml0ZSAvTGlicmFyeS9Q
-					cmVmZXJlbmNlcy9jb20uYXBwbGUubG9jYXRp
-					b25tZW51LnBsaXN0IFNob3dTeXN0ZW1TZXJ2
-					aWNlcyAtYm9vbCB0cnVlCnN1ZG8gL3Vzci9i
-					aW4vc2VjdXJpdHkgYXV0aG9yaXphdGlvbmRi
-					IHdyaXRlIHN5c3RlbS5sb2dpbi5zY3JlZW5z
-					YXZlciAiYXV0aGVudGljYXRlLXNlc3Npb24t
-					b3duZXIiCnN1ZG8gaWZjb25maWcgZW4wIC1h
-					cnAKc3VkbyBsYXVuY2hjdGwgZGlzYWJsZSBz
-					eXN0ZW0vbmV0Ymlvc2QKc3VkbyBsYXVuY2hj
-					dGwgdW5sb2FkIC13IC9TeXN0ZW0vTGlicmFy
-					eS9MYXVuY2hEYWVtb25zL2NvbS5hcHBsZS5u
-					ZXRiaW9zZC5wbGlzdApzdWRvIC91c3Ivc2Jp
-					bi9zeXN0ZW1zZXR1cCAtZiAtc2V0cmVtb3Rl
-					bG9naW4gb2ZmID4vZGV2L251bGwKc3VkbyAv
-					YmluL2xhdW5jaGN0bCBkaXNhYmxlIHN5c3Rl
-					bS9jb20ub3BlbnNzaC5zc2hkCnN1ZG8gbGF1
-					bmNoY3RsIGNvbmZpZyB1c2VyIHVtYXNrIDA3
-					NwpjZCAvVXNlcnMKc3VkbyBjaG1vZCBvZy1y
-					d3ggKgo=
+					b25zL2NvbS5hcHBsZS5hdWRpdGQucGxpc3QK
+					c3VkbyAvdXNyL2Jpbi9kZWZhdWx0cyAtY3Vy
+					cmVudEhvc3Qgd3JpdGUgY29tLmFwcGxlLkJs
+					dWV0b290aCBQcmVmS2V5U2VydmljZXNFbmFi
+					bGVkIC1ib29sIGZhbHNlCnN1ZG8gL3Vzci9z
+					YmluL252cmFtIGJvb3QtYXJncz0iIgpzdWRv
+					IHBtc2V0IC1hIGRlc3Ryb3lmdmtleW9uc3Rh
+					bmRieSAxCnN1ZG8gcG1zZXQgLWEgaGliZXJu
+					YXRlbW9kZSAyNQpzdWRvIHBtc2V0IC1hIHBv
+					d2VybmFwIDAKc3VkbyBwbXNldCAtYSBzdGFu
+					ZGJ5IDAKc3VkbyBwbXNldCAtYSBzdGFuZGJ5
+					ZGVsYXkgMApzdWRvIHBtc2V0IC1hIGF1dG9w
+					b3dlcm9mZiAwCnN1ZG8gcG1zZXQgLWEgd29t
+					cCAwCnN1ZG8gcG1zZXQgLWEgc2xlZXAgMQpz
+					dWRvIHBtc2V0IC1hIGRpc3BsYXlzbGVlcCAy
+					CnN1ZG8gcG1zZXQgLWEgbmV0d29ya292ZXJz
+					bGVlcCAwCnN1ZG8gL3Vzci9iaW4vZGVmYXVs
+					dHMgd3JpdGUgL3Zhci9kYi9sb2NhdGlvbmQv
+					TGlicmFyeS9QcmVmZXJlbmNlcy9CeUhvc3Qv
+					Y29tLmFwcGxlLmxvY2F0aW9uZCBMb2NhdGlv
+					blNlcnZpY2VzRW5hYmxlZCAtYm9vbCB0cnVl
+					OyAvYmluL2xhdW5jaGN0bCBraWNrc3RhcnQg
+					LWsgc3lzdGVtL2NvbS5hcHBsZS5sb2NhdGlv
+					bmQKc3VkbyAvdXNyL2Jpbi9kZWZhdWx0cyB3
+					cml0ZSAvTGlicmFyeS9QcmVmZXJlbmNlcy9j
+					b20uYXBwbGUubG9jYXRpb25tZW51LnBsaXN0
+					IFNob3dTeXN0ZW1TZXJ2aWNlcyAtYm9vbCB0
+					cnVlCnN1ZG8gL3Vzci9iaW4vc2VjdXJpdHkg
+					YXV0aG9yaXphdGlvbmRiIHdyaXRlIHN5c3Rl
+					bS5sb2dpbi5zY3JlZW5zYXZlciAiYXV0aGVu
+					dGljYXRlLXNlc3Npb24tb3duZXIiCnN1ZG8g
+					aWZjb25maWcgZW4wIC1hcnAKc3VkbyBsYXVu
+					Y2hjdGwgdW5sb2FkIC13IC9TeXN0ZW0vTGli
+					cmFyeS9MYXVuY2hEYWVtb25zL2NvbS5hcHBs
+					ZS5uZXRiaW9zZC5wbGlzdApzdWRvIC91c3Iv
+					c2Jpbi9zeXN0ZW1zZXR1cCAtZiAtc2V0cmVt
+					b3RlbG9naW4gb2ZmID4vZGV2L251bGwKc3Vk
+					byBsYXVuY2hjdGwgY29uZmlnIHVzZXIgdW1h
+					c2sgMDc3CmNkIC9Vc2VycwpzdWRvIGNobW9k
+					IG9nLXJ3eCAq
 					</data>
 					<key>filename</key>
-					<string>startup</string>
+					<string>boot</string>
 				</dict>
 			</array>
 			<key>logoutscripts</key>
@@ -1028,49 +1028,49 @@
 					L2NvbS5hcHBsZS5hdWRpdGQKc3VkbyAvYmlu
 					L2xhdW5jaGN0bCBib290c3RyYXAgc3lzdGVt
 					IC9TeXN0ZW0vTGlicmFyeS9MYXVuY2hEYWVt
-					b25zL2NvbS5hcHBsZS5hdWRpdGQucGxpc3Qg
-					CnN1ZG8gL3Vzci9zYmluL252cmFtIGJvb3Qt
-					YXJncz0iIgpzdWRvIHBtc2V0IC1hIGRlc3Ry
-					b3lmdmtleW9uc3RhbmRieSAxCnN1ZG8gcG1z
-					ZXQgLWEgaGliZXJuYXRlbW9kZSAyNQpzdWRv
-					IHBtc2V0IC1hIHBvd2VybmFwIDAKc3VkbyBw
-					bXNldCAtYSBzdGFuZGJ5IDAKc3VkbyBwbXNl
-					dCAtYSBzdGFuZGJ5ZGVsYXkgMApzdWRvIHBt
-					c2V0IC1hIGF1dG9wb3dlcm9mZiAwCnN1ZG8g
-					cG1zZXQgLWEgd29tcCAwCnN1ZG8gcG1zZXQg
-					LWEgc2xlZXAgMQpzdWRvIHBtc2V0IC1hIGRp
-					c3BsYXlzbGVlcCAyCnN1ZG8gcG1zZXQgLWEg
-					bmV0d29ya292ZXJzbGVlcCAwCnN1ZG8gL3Vz
-					ci9iaW4vZGVmYXVsdHMgd3JpdGUgL3Zhci9k
-					Yi9sb2NhdGlvbmQvTGlicmFyeS9QcmVmZXJl
-					bmNlcy9CeUhvc3QvY29tLmFwcGxlLmxvY2F0
-					aW9uZCBMb2NhdGlvblNlcnZpY2VzRW5hYmxl
-					ZCAtYm9vbCB0cnVlOyAvYmluL2xhdW5jaGN0
-					bCBraWNrc3RhcnQgLWsgc3lzdGVtL2NvbS5h
-					cHBsZS5sb2NhdGlvbmQKc3VkbyAvdXNyL2Jp
-					bi9kZWZhdWx0cyB3cml0ZSAvTGlicmFyeS9Q
-					cmVmZXJlbmNlcy9jb20uYXBwbGUubG9jYXRp
-					b25tZW51LnBsaXN0IFNob3dTeXN0ZW1TZXJ2
-					aWNlcyAtYm9vbCB0cnVlCnN1ZG8gL3Vzci9i
-					aW4vc2VjdXJpdHkgYXV0aG9yaXphdGlvbmRi
-					IHdyaXRlIHN5c3RlbS5sb2dpbi5zY3JlZW5z
-					YXZlciAiYXV0aGVudGljYXRlLXNlc3Npb24t
-					b3duZXIiCnN1ZG8gaWZjb25maWcgZW4wIC1h
-					cnAKc3VkbyBsYXVuY2hjdGwgZGlzYWJsZSBz
-					eXN0ZW0vbmV0Ymlvc2QKc3VkbyBsYXVuY2hj
-					dGwgdW5sb2FkIC13IC9TeXN0ZW0vTGlicmFy
-					eS9MYXVuY2hEYWVtb25zL2NvbS5hcHBsZS5u
-					ZXRiaW9zZC5wbGlzdApzdWRvIC91c3Ivc2Jp
-					bi9zeXN0ZW1zZXR1cCAtZiAtc2V0cmVtb3Rl
-					bG9naW4gb2ZmID4vZGV2L251bGwKc3VkbyAv
-					YmluL2xhdW5jaGN0bCBkaXNhYmxlIHN5c3Rl
-					bS9jb20ub3BlbnNzaC5zc2hkCnN1ZG8gbGF1
-					bmNoY3RsIGNvbmZpZyB1c2VyIHVtYXNrIDA3
-					NwpjZCAvVXNlcnMKc3VkbyBjaG1vZCBvZy1y
-					d3ggKgo=
+					b25zL2NvbS5hcHBsZS5hdWRpdGQucGxpc3QK
+					c3VkbyAvdXNyL2Jpbi9kZWZhdWx0cyAtY3Vy
+					cmVudEhvc3Qgd3JpdGUgY29tLmFwcGxlLkJs
+					dWV0b290aCBQcmVmS2V5U2VydmljZXNFbmFi
+					bGVkIC1ib29sIGZhbHNlCnN1ZG8gL3Vzci9z
+					YmluL252cmFtIGJvb3QtYXJncz0iIgpzdWRv
+					IHBtc2V0IC1hIGRlc3Ryb3lmdmtleW9uc3Rh
+					bmRieSAxCnN1ZG8gcG1zZXQgLWEgaGliZXJu
+					YXRlbW9kZSAyNQpzdWRvIHBtc2V0IC1hIHBv
+					d2VybmFwIDAKc3VkbyBwbXNldCAtYSBzdGFu
+					ZGJ5IDAKc3VkbyBwbXNldCAtYSBzdGFuZGJ5
+					ZGVsYXkgMApzdWRvIHBtc2V0IC1hIGF1dG9w
+					b3dlcm9mZiAwCnN1ZG8gcG1zZXQgLWEgd29t
+					cCAwCnN1ZG8gcG1zZXQgLWEgc2xlZXAgMQpz
+					dWRvIHBtc2V0IC1hIGRpc3BsYXlzbGVlcCAy
+					CnN1ZG8gcG1zZXQgLWEgbmV0d29ya292ZXJz
+					bGVlcCAwCnN1ZG8gL3Vzci9iaW4vZGVmYXVs
+					dHMgd3JpdGUgL3Zhci9kYi9sb2NhdGlvbmQv
+					TGlicmFyeS9QcmVmZXJlbmNlcy9CeUhvc3Qv
+					Y29tLmFwcGxlLmxvY2F0aW9uZCBMb2NhdGlv
+					blNlcnZpY2VzRW5hYmxlZCAtYm9vbCB0cnVl
+					OyAvYmluL2xhdW5jaGN0bCBraWNrc3RhcnQg
+					LWsgc3lzdGVtL2NvbS5hcHBsZS5sb2NhdGlv
+					bmQKc3VkbyAvdXNyL2Jpbi9kZWZhdWx0cyB3
+					cml0ZSAvTGlicmFyeS9QcmVmZXJlbmNlcy9j
+					b20uYXBwbGUubG9jYXRpb25tZW51LnBsaXN0
+					IFNob3dTeXN0ZW1TZXJ2aWNlcyAtYm9vbCB0
+					cnVlCnN1ZG8gL3Vzci9iaW4vc2VjdXJpdHkg
+					YXV0aG9yaXphdGlvbmRiIHdyaXRlIHN5c3Rl
+					bS5sb2dpbi5zY3JlZW5zYXZlciAiYXV0aGVu
+					dGljYXRlLXNlc3Npb24tb3duZXIiCnN1ZG8g
+					aWZjb25maWcgZW4wIC1hcnAKc3VkbyBsYXVu
+					Y2hjdGwgdW5sb2FkIC13IC9TeXN0ZW0vTGli
+					cmFyeS9MYXVuY2hEYWVtb25zL2NvbS5hcHBs
+					ZS5uZXRiaW9zZC5wbGlzdApzdWRvIC91c3Iv
+					c2Jpbi9zeXN0ZW1zZXR1cCAtZiAtc2V0cmVt
+					b3RlbG9naW4gb2ZmID4vZGV2L251bGwKc3Vk
+					byBsYXVuY2hjdGwgY29uZmlnIHVzZXIgdW1h
+					c2sgMDc3CmNkIC9Vc2VycwpzdWRvIGNobW9k
+					IG9nLXJ3eCAq
 					</data>
 					<key>filename</key>
-					<string>shutdown</string>
+					<string>init0</string>
 				</dict>
 			</array>
 		</dict>
@@ -1311,7 +1311,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>9D63D6C5-2367-492F-9F69-5D369C9E007F</string>
+	<string>E9E1FA75-7729-4665-8A67-44BBDED8C5AF</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
