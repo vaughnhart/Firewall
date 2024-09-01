@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>HasRemovalPasscode</key>
+	<true/>
 	<key>PayloadContent</key>
 	<array>
 		<dict>
@@ -829,6 +831,8 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>AppleShowAllFiles</key>
+			<true/>
 			<key>FXDefaultSearchScope</key>
 			<string>SCcf</string>
 			<key>FXPreferredViewStyle</key>
@@ -846,7 +850,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.finder</string>
 			<key>PayloadUUID</key>
-			<string>AD743920-2F58-418C-9969-28D448A6B8A1</string>
+			<string>A9A74C99-985B-4D7B-B8E5-F64E77A65191</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>ProhibitBurn</key>
@@ -1295,6 +1299,20 @@
 			<key>UserHasDeclinedEnable</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Profile Removal</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.profileRemovalPassword.91730836-AC78-4A59-931F-5EE6E02EF801</string>
+			<key>PayloadType</key>
+			<string>com.apple.profileRemovalPassword</string>
+			<key>PayloadUUID</key>
+			<string>91730836-AC78-4A59-931F-5EE6E02EF801</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RemovalPassword</key>
+			<string>Skepsis</string>
+		</dict>
 	</array>
 	<key>PayloadDescription</key>
 	<string>This payload disables iCloud, System Preference Panes, removable writable media, and certain account setup options.</string>
@@ -1311,7 +1329,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>E9E1FA75-7729-4665-8A67-44BBDED8C5AF</string>
+	<string>D961D8CB-4507-4C23-ADCA-7CC80F9A115A</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
