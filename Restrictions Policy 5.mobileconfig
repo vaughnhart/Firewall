@@ -129,6 +129,8 @@
 			<true/>
 			<key>EnableAssessment</key>
 			<true/>
+			<key>EnableXProtectMalwareUpload</key>
+			<true/>
 			<key>PayloadDisplayName</key>
 			<string>Enable Gatekeeper, Identified Developers Only</string>
 			<key>PayloadIdentifier</key>
@@ -136,7 +138,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.systempolicy.control</string>
 			<key>PayloadUUID</key>
-			<string>71CA3FD4-6E59-4B1E-8907-B3CA13F02DB4</string>
+			<string>8EAB4E6D-D4FD-4373-A2E7-C2CD2A6605BB</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
@@ -417,6 +419,10 @@
 		<dict>
 			<key>AdminHostInfo</key>
 			<string>IPAddress</string>
+			<key>DisableConsoleAccess</key>
+			<true/>
+			<key>DisableFDEAutoLogin</key>
+			<true/>
 			<key>EnableExternalAccounts</key>
 			<false/>
 			<key>LocalUserLoginEnabled</key>
@@ -430,7 +436,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.loginwindow</string>
 			<key>PayloadUUID</key>
-			<string>791A0706-BB79-4071-906C-27B5C8644862</string>
+			<string>B4D2E243-ACD9-4FD9-AA5A-ED67AD3ECEEB</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>RetriesUntilHint</key>
@@ -525,7 +531,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>9B48B644-3216-48E0-A0C8-1C8EA5EAD1A3</string>
+			<string>E45CF0DF-C4CE-4F0C-BD91-DE58B05569E8</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowARDRemoteManagementModification</key>
@@ -664,9 +670,13 @@
 			<false/>
 			<key>allowUntrustedTLSPrompt</key>
 			<false/>
+			<key>allowVideoConferencingRemoteControl</key>
+			<false/>
 			<key>allowVoiceDialing</key>
 			<false/>
 			<key>allowWebDistributionAppInstallation</key>
+			<false/>
+			<key>allowiPhoneMirroring</key>
 			<false/>
 			<key>allowiPhoneWidgetsOnMac</key>
 			<false/>
@@ -1329,7 +1339,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>D961D8CB-4507-4C23-ADCA-7CC80F9A115A</string>
+	<string>40BC7C6C-B676-4C76-A837-831FE5378D38</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 	<key>TargetDeviceType</key>
