@@ -598,6 +598,8 @@
 			<false/>
 			<key>allowGameCenter</key>
 			<false/>
+			<key>allowGenmoji</key>
+			<false/>
 			<key>allowHostPairing</key>
 			<false/>
 			<key>allowInAppPurchases</key>
@@ -675,6 +677,8 @@
 			<key>allowVoiceDialing</key>
 			<false/>
 			<key>allowWebDistributionAppInstallation</key>
+			<false/>
+			<key>allowWritingTools</key>
 			<false/>
 			<key>allowiPhoneMirroring</key>
 			<false/>
