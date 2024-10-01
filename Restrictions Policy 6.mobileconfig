@@ -1371,6 +1371,8 @@
 	<string>40BC7C6C-B676-4C76-A837-831FE5378D38</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
+	<key>RemovalDate</key>
+	<date>2029-03-21T15:37:24Z</date>
 	<key>TargetDeviceType</key>
 	<integer>0</integer>
 </dict>
