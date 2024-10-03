@@ -365,6 +365,8 @@
 			<string>0202c835-be1d-4846-a16c-c77764a77473</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
+			<key>Search Queries Data Sharing Status</key>
+			<integer>2</integer>
 			<key>Siri Data Sharing Opt-In Status</key>
 			<integer>2</integer>
 		</dict>
