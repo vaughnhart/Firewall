@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>This is bad fior your Mac.</string>
+	</dict>
+	<key>HasRemovalPasscode</key>
+	<true/>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Profile Removal</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.profileRemovalPassword.1854A420-A648-44D9-A0C9-C0FE8B20283E</string>
+			<key>PayloadType</key>
+			<string>com.apple.profileRemovalPassword</string>
+			<key>PayloadUUID</key>
+			<string>1854A420-A648-44D9-A0C9-C0FE8B20283E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RemovalPassword</key>
+			<string>AppLock</string>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Parental Controls: Application Restrictions #1</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.applicationaccess.new.1355D538-12CA-4185-8EAC-821515B60BC4</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess.new</string>
+			<key>PayloadUUID</key>
+			<string>1355D538-12CA-4185-8EAC-821515B60BC4</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>familyControlsEnabled</key>
+			<true/>
+			<key>pathBlackList</key>
+			<array>
+				<string>/System/Applications/News.app</string>
+				<string>/System/Applications/Siri.app</string>
+				<string>/System/Applications/Stocks.app</string>
+				<string>/System/Applications/Freeform.app</string>
+				<string>/System/Applications/Home.app</string>
+				<string>/System/Applications/Time Machine.app</string>
+				<string>/System/Applications/VoiceMemos.app</string>
+				<string>/System/Applications/Shortcuts.app</string>
+				<string>/System/Applications/Launchpad.app</string>
+				<string>/System/Applications/Mail.app</string>
+				<string>/System/Applications/Maps.app</string>
+				<string>/System/Applications/Mission Control.app</string>
+				<string>/System/Applications/Music.app</string>
+				<string>/System/Applications/Podcasts.app</string>
+				<string>/System/Applications/Books.app</string>
+				<string>/usr/libexec/wifip2pd</string>
+				<string>/System/Applications/Utilities/Bluetooth File Exchange.app</string>
+				<string>/Users/</string>
+			</array>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>App Control</string>
+	<key>PayloadDisplayName</key>
+	<string>App Control v3</string>
+	<key>PayloadIdentifier</key>
+	<string>.49B77C66-FB46-4C64-9DC1-0EAF99AE010D</string>
+	<key>PayloadOrganization</key>
+	<string>Aegis IT, LLC</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>49B77C66-FB46-4C64-9DC1-0EAF99AE010D</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>TargetDeviceType</key>
+	<integer>0</integer>
+</dict>
+</plist>
