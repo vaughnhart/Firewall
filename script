@@ -2,6 +2,7 @@
 sudo scutil --set ComputerName 보쌈애인
 sudo scutil --set LocalHostName BoSsamLover
 sudo scutil --set HostName 보쌈애인
+sudo /bin/launchctl enable system/com.apple.auditd
 sudo /bin/launchctl disable system/org.apache.httpd
 sudo /bin/launchctl disable system/com.apple.nfsd
 sudo /usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
@@ -15,28 +16,15 @@ sudo /usr/sbin/cupsctl --no-share-printers
 sudo /usr/bin/lpstat -p | awk '{print $2}'| /usr/bin/xargs -I{} lpadmin -p {} -o printer-is-shared=false 
 sudo /usr/sbin/systemsetup -setremoteappleevents off
 sudo /bin/launchctl disable system/com.apple.AEServer
-sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -stop 
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -stop
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.ftp-proxy.plist 
 sudo /bin/launchctl disable system/com.apple.screensharing
 sudo /bin/launchctl disable system/com.apple.smbd
 sudo /bin/launchctl disable system/com.openssh.sshd
 sudo /bin/launchctl disable system/com.apple.netbiosd.plist
-sudo /bin/chmod -RN /var/audit
-sudo /bin/chmod -N /var/audit
 sudo /bin/launchctl enable system/com.apple.auditd
-sudo /bin/launchctl bootstrap system /System/Library/LaunchDaemons/com.apple.auditd.plist  
-sudo /usr/sbin/audit -i
-sudo /bin/chmod -N /etc/security/audit_control
-sudo /usr/bin/chgrp wheel /etc/security/audit_control  
-sudo /bin/chmod 440 /etc/security/audit_control
-sudo /usr/sbin/chown root /etc/security/audit_control 
-sudo /usr/bin/chgrp -R wheel /var/audit/*
-sudo /bin/chmod 440 /var/audit/*
-sudo /usr/bin/chgrp wheel /var/audit
-sudo /usr/sbin/chown root /var/audit
-sudo /bin/chmod 700 /var/audit
-sudo /usr/bin/sed -i.bak 's/^expire-after.*/expire-after:7d/' /etc/security/audit_control; /usr/sbin/audit -s
-sudo /usr/sbin/nvram boot-args="" 
-sudo /usr/bin/security authorizationdb write system.login.screensaver "use-login-window-ui"
+sudo /usr/bin/defaults -currentHost write com.apple.Bluetooth PrefKeyServicesEnabled -bool false
+sudo /usr/sbin/nvram boot-args=""
 sudo pmset -a destroyfvkeyonstandby 1
 sudo pmset -a hibernatemode 25
 sudo pmset -a powernap 0
@@ -47,55 +35,13 @@ sudo pmset -a womp 0
 sudo pmset -a sleep 1
 sudo pmset -a displaysleep 2
 sudo pmset -a networkoversleep 0
-sudo /usr/bin/defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd LocationServicesEnabled -bool true; /bin/launchctl kickstart -k system/com.apple.locationd
+sudo /usr/bin/defaults write /var/db/locationd/Library/Preferences/ByHost/com.apple.locationd LocationServicesEnabled -bool true
 sudo /usr/bin/defaults write /Library/Preferences/com.apple.locationmenu.plist ShowSystemServices -bool true
-sudo networksetup -setv6off "Thunderbolt Bridge"
-sudo networksetup -setv6off "Wi-Fi"
+sudo /usr/bin/security authorizationdb write system.login.screensaver "authenticate-session-owner"
 sudo ifconfig en0 -arp
-sudo launchctl disable system/netbiosd
 sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
 sudo /usr/sbin/systemsetup -f -setremotelogin off >/dev/null
-sudo /bin/launchctl disable system/com.openssh.sshd
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/exclusive
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-shm
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-wal
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/resetreason
-rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/thumbnails.data
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/thumbnails.fraghandler
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/exclusive
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-shm
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/index.sqlite-wal
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/resetreason
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/thumbnails.data
-sudo rm -rfv $(getconf DARWIN_USER_CACHE_DIR)/com.apple.QuickLook.thumbnailcache/thumbnails.fraghandler
-rm -rfv "~/Library/LanguageModeling/*" "~/Library/Spelling/*" "~/Library/Suggestions/*"
-chmod -R 000 ~/Library/LanguageModeling ~/Library/Spelling ~/Library/Suggestions
-chflags -R uchg ~/Library/LanguageModeling ~/Library/Spelling ~/Library/Suggestions
-rm -rfv "~/Library/Application Support/Quick Look/*"
-chmod -R 000 "~/Library/Application Support/Quick Look"
-chflags -R uchg "~/Library/Application Support/Quick Look"
-sudo rm -rfv /.DocumentRevisions-V100/*
-sudo chmod -R 000 /.DocumentRevisions-V100
-sudo chflags -R uchg /.DocumentRevisions-V100
-rm -rfv "~/Library/Saved Application State/*"
-rm -rfv "~/Library/Containers/<APPNAME>/Saved Application State"
-chmod -R 000 "~/Library/Saved Application State/"
-chmod -R 000 "~/Library/Containers/<APPNAME>/Saved Application State"
-chflags -R uchg "~/Library/Saved Application State/"
-chflags -R uchg "~/Library/Containers/<APPNAME>/Saved Application State"
-rm -rfv "~/Library/Containers/<APP>/Data/Library/Autosave Information"
-rm -rfv "~/Library/Autosave Information"
-chmod -R 000 "~/Library/Containers/<APP>/Data/Library/Autosave Information"
-chmod -R 000 "~/Library/Autosave Information"
-chflags -R uchg "~/Library/Containers/<APP>/Data/Library/Autosave Information"
-chflags -R uchg "~/Library/Autosave Information"
-rm -rfv ~/Library/Assistant/SiriAnalytics.db
-chmod -R 000 ~/Library/Assistant/SiriAnalytics.db
-chflags -R uchg ~/Library/Assistant/SiriAnalytics.db
-defaults delete ~/Library/Preferences/com.apple.iTunes.plist recentSearches
 sudo launchctl config user umask 077
 cd /Users
 sudo chmod og-rwx *
-sudo shutdown -r now -o
+sudo shutdown -r now

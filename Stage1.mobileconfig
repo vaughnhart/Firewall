@@ -1297,24 +1297,6 @@
 			<key>moduleName</key>
 			<string>Sonoma</string>
 		</dict>
-		<dict>
-			<key>PayloadDisplayName</key>
-			<string>Parental Controls: Application Restrictions #1</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.applicationaccess.new.524003E2-227A-4A51-9D7D-CD9F353959ED</string>
-			<key>PayloadType</key>
-			<string>com.apple.applicationaccess.new</string>
-			<key>PayloadUUID</key>
-			<string>524003E2-227A-4A51-9D7D-CD9F353959ED</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>familyControlsEnabled</key>
-			<true/>
-			<key>pathBlackList</key>
-			<array>
-				<string>/Users/</string>
-			</array>
-		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
 	<string>Stage1</string>
