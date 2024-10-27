@@ -132,7 +132,11 @@
 			<false/>
 			<key>allowMailPrivacyProtection</key>
 			<false/>
+			<key>allowMailSummary</key>
+			<false/>
 			<key>allowMarketplaceAppInstallation</key>
+			<false/>
+			<key>allowMediaSharingModification</key>
 			<false/>
 			<key>allowMusicService</key>
 			<false/>
@@ -322,6 +326,8 @@
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>closeViewHotkeysEnabled</key>
+			<true/>
+			<key>closeViewScrollWheelToggle</key>
 			<true/>
 			<key>flashScreen</key>
 			<true/>
