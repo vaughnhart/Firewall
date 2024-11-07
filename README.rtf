@@ -711,6 +711,9 @@ Extensions profile for Cisco and Team Murus apps called Baseline.
 Updated script file.
 Removed USG files… which are freely available online… also visit the CIA website for reading that is quite informative. The Freedom of Information Act. READ READ READ.
 
+Changeling 11/7/24
+Added the following IP address to the Umbrella whitelist group as per Cisco Talos filtering (2a04:e4c7:ffff::/48, 2a04:e4c7:fffe::/48) in both Murus and Vallum rules.
+
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
 
@@ -728,5 +731,6 @@ who -a
 umask
 sudo launchctl config user umask 077 
 sudo log collect --output ~/Desktop/SystemLogs.logarchive --last 20m
+grep -w 'console' /private/etc/ttys
 
 In console search for it.murus.Vallum.AFW to see running log
