@@ -714,6 +714,10 @@ Removed USG files… which are freely available online… also visit the CIA web
 Changeling 11/7/24
 Added the following IP address to the Umbrella whitelist group as per Cisco Talos filtering (2a04:e4c7:ffff::/48, 2a04:e4c7:fffe::/48) in both Murus and Vallum rules.
 
+Changelog 11/26/24
+Added some more OVH ranges to Murus_UmbrellaDNSOnly
+Added sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE to script without which login and logout scripts won’t run as part of a MDM profile. 
+
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
 
@@ -732,5 +736,6 @@ umask
 sudo launchctl config user umask 077 
 sudo log collect --output ~/Desktop/SystemLogs.logarchive --last 20m
 grep -w 'console' /private/etc/ttys
+sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE
 
 In console search for it.murus.Vallum.AFW to see running log
