@@ -24,6 +24,7 @@ sudo /bin/launchctl disable system/com.openssh.sshd
 sudo /bin/launchctl disable system/com.apple.netbiosd.plist
 sudo /bin/launchctl enable system/com.apple.auditd
 sudo /usr/bin/defaults -currentHost write com.apple.Bluetooth PrefKeyServicesEnabled -bool false
+sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE
 sudo /usr/sbin/nvram boot-args=""
 sudo pmset -a destroyfvkeyonstandby 1
 sudo pmset -a hibernatemode 25
