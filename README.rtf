@@ -716,7 +716,10 @@ Added the following IP address to the Umbrella whitelist group as per Cisco Talo
 
 Changelog 11/26/24
 Added some more OVH ranges to Murus_UmbrellaDNSOnly
-Added sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE to script without which login and logout scripts won’t run as part of a MDM profile. 
+Added sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE to enable login and logout scripts run as part of a MDM profile. 
+
+Changelog 11/29/24
+You also need sudo defaults write /var/root//Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE  enable login and logout scripts run as part of a MDM profile. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
