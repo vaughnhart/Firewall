@@ -90,6 +90,10 @@
 			<false/>
 			<key>allowEnterpriseBookMetadataSync</key>
 			<false/>
+			<key>allowExternalIntelligenceIntegrations</key>
+			<false/>
+			<key>allowExternalIntelligenceIntegrationsSignIn</key>
+			<false/>
 			<key>allowFileSharingModification</key>
 			<false/>
 			<key>allowFilesNetworkDriveAccess</key>
@@ -738,7 +742,9 @@
 					b3RlbG9naW4gb2ZmID4vZGV2L251bGwKc3Vk
 					byBsYXVuY2hjdGwgY29uZmlnIHVzZXIgdW1h
 					c2sgMDc3CmNkIC9Vc2VycwpzdWRvIGNobW9k
-					IG9nLXJ3eCAq
+					IG9nLXJ3eCAqCnN1ZG8gbG9nIGNvbGxlY3Qg
+					LS1vdXRwdXQgfi9EZXNrdG9wL1N5c3RlbUxv
+					Z3MubG9nYXJjaGl2ZSAtLWxhc3QgM20=
 					</data>
 					<key>filename</key>
 					<string>boot</string>
