@@ -148,6 +148,8 @@
 			<false/>
 			<key>allowNews</key>
 			<false/>
+			<key>allowNotesTranscriptionSummary</key>
+			<false/>
 			<key>allowOpenFromManagedToUnmanaged</key>
 			<false/>
 			<key>allowOpenFromUnmanagedToManaged</key>
@@ -201,6 +203,8 @@
 			<key>allowUntrustedTLSPrompt</key>
 			<false/>
 			<key>allowVPNCreation</key>
+			<false/>
+			<key>allowVisualIntelligenceSummary</key>
 			<false/>
 			<key>allowVoiceDialing</key>
 			<false/>
