@@ -1311,7 +1311,7 @@
 			<key>askForPasswordDelay</key>
 			<integer>0</integer>
 			<key>moduleName</key>
-			<string>Sonoma</string>
+			<string>Sequoia</string>
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
