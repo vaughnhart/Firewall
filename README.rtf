@@ -738,7 +738,9 @@ Defaults	tty_tickets
 Defaults	timestamp_timeout=0
 
 Changeling 2/10/25
-Updated script to disable Bluetooth string… which I don’t use. Please note that you will need to change the username to the username for the system you are using. 
+Updated script to disable Bluetooth Sharing… which I don’t use. 
+/usr/bin/sudo -u "$CURRENT_USER" /usr/bin/defaults -currentHost write com.apple.Bluetooth PrefKeyServicesEnabled -bool false
+Please note that you will need to change the “$CURRENT_USER” to the username for the system you are using. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
