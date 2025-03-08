@@ -728,7 +728,7 @@ I’ve switch to Cisco Umbrella DNS Advantage… under a MSP license. If you nee
 Changelog 2/7/25
 I added umbrella.com, opendns.com, and cisco.com to my whitelist addresses in Murus and Vallum.
 
-Chngelog 2/9/25
+Changelog 2/9/25
 Sequoia ready Stage1.mobileconfig
 Please note screenshot for Photos Enhanced Search disable. Really IMPORTANT!!! I don’t have a key option to disable it by profile so it must be done manually. 
 there is also an option in visudo (run the command in terminal: sudo visudo)
@@ -741,6 +741,29 @@ Changeling 2/10/25
 Updated script to disable Bluetooth Sharing… which I don’t use. 
 /usr/bin/sudo -u "$CURRENT_USER" /usr/bin/defaults -currentHost write com.apple.Bluetooth PrefKeyServicesEnabled -bool false
 Please note that you will need to change the “$CURRENT_USER” to the username for the system you are using. 
+
+Changelog 3/8/25
+Pf.conf from /etc/pf.conf
+int = "{en0, en1, en2, en3, en4}"
+set block-policy drop
+set fingerprints "/etc/pf.os"
+set ruleset-optimization basic
+set skip on lo0
+set limit {tables 10000, table-entries 400000}
+scrub in all no-df
+scrub-anchor "cisco.anyconnect.vpn"
+scrub-anchor "com.apple/*"
+nat-anchor "com.apple/*"
+rdr-anchor "com.apple/*"
+dummynet-anchor "com.apple/*"
+anchor "cisco.anyconnect.vpn"
+anchor "com.apple/*"
+load anchor "com.apple" from "/etc/pf.anchors/com.apple"
+antispoof log quick for $int
+block drop in log quick from no-route to any
+block drop in log quick from urpf-failed to any
+block log quick proto 253 from any to any
+block drop in log quick on $int from any to 255.255.255.255
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
