@@ -754,13 +754,9 @@ Man vi - tutorial for vi editing
 Man pfctl -0 tutorial for managing pfctl (the loader for pf) 
 
 Changelog 03/17/25
-I changed pf.conf to mypf.conf (Mac OS will clear the pf.conf file after each OS update… so using a different name will hopefully keep the file persistent. Please check after every update.)
-The self hostname is nomenclature to pf for all addresses assigned to any interface on the local machine. 
-sudo pfctl -n -f /etc/mypf.conf (check this pf configuration file for errors)
-sudo pfctl -f /etc/mypf.conf (load pf with this configuration file)
-sudo less /etc/mypf.conf (see your pf.conf file)
-sudo pfctl -s all (see what’s running in pf)
-sudo vi /etc/mypf.conf (edit mode)
+Mac OS will clear the pf.conf file after each OS update. Please be aware and copy the pf.conf file I have posted back to the folder. 
+I am testing the following rule: 
+antispoof for self (but having issue with Cisoc Umbrella making it's connection from localhost to 127/::1)
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
