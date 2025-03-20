@@ -22,6 +22,3 @@
 51.195.6.156
 34.102.213.72
 85.217.223.116
-mask.icloud.com
-mask-h2.icloud.com
-mask-api.icloud.com
