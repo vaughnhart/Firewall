@@ -692,7 +692,7 @@ Finally “fixed” a setting in my Restrictions policy 5…. Lol… so it’s w
 Changelog 9/18/24
 Restrictions Policy 6 - updated for the new OS and also Sonoma… fixed some errors… something about remote viewing with classroom and a Dock issue. Set apps to open Fullscreen.
 
-Changeling 10/1/24
+Changelog 10/1/24
 Change the removal date for the Restrictions Policy 6 Profile. Added the Vallum 5 Umbrella_DNS_Only config. My version of Umbrella DNS is going away… I cannot renew it so I am looking for an alternative. In fact, all Home version of Umbrella are going away. You’ll have to purchase a Corporate version at a corporate price point. Also, Cisco has removed the personal store for updating your credit cards and renewing ahead of expiration. Please be aware and tell your friends and family. You’ll lose protection on the last date of your subscription. 
 
 Changelog 10/2/24
@@ -708,7 +708,7 @@ Extensions profile for Cisco and Team Murus apps called Baseline.
 Updated script file.
 Removed USG files… which are freely available online… also visit the CIA website for reading that is quite informative. The Freedom of Information Act. READ READ READ.
 
-Changeling 11/7/24
+Changelog 11/7/24
 Added the following IP address to the Umbrella whitelist group as per Cisco Talos filtering (2a04:e4c7:ffff::/48, 2a04:e4c7:fffe::/48) in both Murus and Vallum rules.
 
 Changelog 11/26/24
@@ -734,7 +734,7 @@ Defaults	requiretty
 Defaults	tty_tickets
 Defaults	timestamp_timeout=0
 
-Changeling 2/10/25
+Changelog 2/10/25
 Updated script to disable Bluetooth Sharing… which I don’t use. 
 /usr/bin/sudo -u "$CURRENT_USER" /usr/bin/defaults -currentHost write com.apple.Bluetooth PrefKeyServicesEnabled -bool false
 Please note that you will need to change the “$CURRENT_USER” to the username for the system you are using. 
@@ -767,6 +767,19 @@ Fixed the antispoof for self rule. Everything works!
 Chnagelog 03/25/25
 Looks like blocking apple private relay in pf doesn’t work whether or not you have it in a table or in a rule, upon reboot, if no dns resolution to those apple address can be made, pf won’t load your ruleset and your machine goes back to being wide open. 
 
+Changelog 04/7/25
+Added the following to bad_actors.txt from my old Meraki firewall block:
+1.64.150.255/32
+255.0.112.86/32
+99.101.110.116/32
+32.84.101.99/32
+Added the the following rules to pf.conf
+table <csix> file "/etc/ipblocklist.txt"
+block in log quick on seld from <csix> to any
+
+ipblocklist.txt ia a RoboSOC ip blocklist obtainable from https://www.cloudcix.com/ipblocklist.txt
+The pf.conf I wrote can be renamed to pf.rules and loaded with sudo pfclt -f /etc/pf.rules once copied to the /etc/ directory along with the table files. 
+You can download the neatest rules from fireholes website. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
