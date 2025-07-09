@@ -5,6 +5,7 @@ sudo scutil --set HostName 보쌈애인
 sudo /bin/launchctl enable system/com.apple.auditd
 sudo /bin/launchctl disable system/org.apache.httpd
 sudo /bin/launchctl disable system/com.apple.nfsd
+sudo bin/rm -rf /etc/exports
 sudo /usr/bin/dscl . -create /Users/root UserShell /usr/bin/false
 sudo /bin/launchctl disable system/com.apple.tftpd
 sudo /bin/launchctl load -w /System/Library/LaunchDaemons/com.apple.timed.plist
