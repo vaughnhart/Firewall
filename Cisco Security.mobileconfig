@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AppBundleIdentifier</key>
+			<string>com.cisco.ciscosecurity.app</string>
+			<key>PayloadDescription</key>
+			<string>Cisco Umbrella</string>
+			<key>PayloadDisplayName</key>
+			<string>Cisco Umbrella</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.dnsProxy.managed.DBE2A157-E134-3E8C-B4FB-23EDF48A0CD1</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsProxy.managed</string>
+			<key>PayloadUUID</key>
+			<string>D7E64552-A952-498C-8D5E-FC22E99443C8</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProviderBundleIdentifier</key>
+			<string>com.cisco.ciscosecurity.app.CiscoUmbrella</string>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Cisco Security</string>
+	<key>PayloadIdentifier</key>
+	<string>com.cisco.ciscosecurity.app.CiscoUmbrella.DBE2A157-E134-3E8C-B4FB-23EDF48A0CD1</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>B6FC0828-0F2E-4E1D-BD94-AB97B8AFC682</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>RemovalDate</key>
+	<date>2030-08-05T22:57:41Z</date>
+	<key>TargetDeviceType</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -75,6 +75,8 @@
 	<string>E346C960-2D73-4965-B916-A90B1506E1C8</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
+	<key>RemovalDate</key>
+	<date>2030-08-05T22:57:27Z</date>
 	<key>TargetDeviceType</key>
 	<integer>5</integer>
 </dict>
