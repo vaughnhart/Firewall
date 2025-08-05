@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>AppBundleIdentifier</key>
+                <string>com.cisco.ciscosecurity.app</string>
+                <key>PayloadDescription</key>
+                <string>Cisco Umbrella</string>
+                <key>PayloadDisplayName</key>
+                <string>Cisco Umbrella</string>
+                <key>PayloadIdentifier</key>
+                <string>com.apple.dnsProxy.managed.DBE2A157-E134-3E8C-B4FB-23EDF48A0CD1</string>
+                <key>PayloadType</key>
+                <string>com.apple.dnsProxy.managed</string>
+                <key>PayloadUUID</key>
+                <string>B5C311D6-73A8-42AF-9D07-A2BD183BC0A5</string>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>ProviderBundleIdentifier</key>
+                <string>com.cisco.ciscosecurity.app.CiscoUmbrella</string>
+                <key>ProviderConfiguration</key>
+<!-- Jamf - copy from here to paste into the Jamf UI to provision a DNS proxy -->
+                <dict>
+                    <key>anonymizationLevel</key>
+                    <integer>0</integer>
+                    <key>disabled</key>
+                    <false/>
+                    <key>internalDomains</key>
+                    <array>
+                        <string>10.in-addr.arpa</string>
+                        <string>16.172.in-addr.arpa</string>
+                        <string>17.172.in-addr.arpa</string>
+                        <string>18.172.in-addr.arpa</string>
+                        <string>19.172.in-addr.arpa</string>
+                        <string>20.172.in-addr.arpa</string>
+                        <string>21.172.in-addr.arpa</string>
+                        <string>22.172.in-addr.arpa</string>
+                        <string>23.172.in-addr.arpa</string>
+                        <string>24.172.in-addr.arpa</string>
+                        <string>25.172.in-addr.arpa</string>
+                        <string>26.172.in-addr.arpa</string>
+                        <string>27.172.in-addr.arpa</string>
+                        <string>28.172.in-addr.arpa</string>
+                        <string>29.172.in-addr.arpa</string>
+                        <string>30.172.in-addr.arpa</string>
+                        <string>31.172.in-addr.arpa</string>
+                        <string>168.192.in-addr.arpa</string>
+                        <string>local</string>
+                    </array>
+                    <key>logLevel</key>
+                    <string>verbose</string>
+                    <key>orgAdminAddress</key>
+                    <string>vaughn@aegisitnyc.com</string>
+                    <key>organizationId</key>
+                    <string>8296804</string>
+                    <key>productId</key>
+                    <string>1</string>
+                    <key>regToken</key>
+                    <string>7JXX8PF7vPvxDyArIjR8ltxesaRIJUgY</string>
+                    <key>serialNumber</key>
+                    <string>$SERIALNUMBER</string>
+                </dict>
+<!-- Jamf - end copy -->
+            </dict>
+        </array>
+        <key>PayloadDisplayName</key>
+        <string>Cisco Security</string>
+        <key>PayloadIdentifier</key>
+        <string>com.cisco.ciscosecurity.app.CiscoUmbrella.DBE2A157-E134-3E8C-B4FB-23EDF48A0CD1</string>
+        <key>PayloadRemovalDisallowed</key>
+        <false/>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadUUID</key>
+        <string>0547F5CD-4718-4E08-912D-CFAC1E6A1176</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+    </dict>
+</plist>
