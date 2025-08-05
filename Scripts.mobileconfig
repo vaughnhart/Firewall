@@ -278,6 +278,8 @@
 	<string>8F027D32-816D-4AE7-8565-C1B63B0295C3</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
+	<key>RemovalDate</key>
+	<date>2035-08-05T22:30:18Z</date>
 	<key>TargetDeviceType</key>
 	<integer>5</integer>
 </dict>

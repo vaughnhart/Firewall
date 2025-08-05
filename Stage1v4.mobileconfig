@@ -60,6 +60,8 @@
 			<false/>
 			<key>allowBookstore</key>
 			<false/>
+			<key>allowCallRecording</key>
+			<false/>
 			<key>allowCloudAddressBook</key>
 			<false/>
 			<key>allowCloudBTMM</key>
@@ -1086,7 +1088,7 @@
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
-	<string>Stage1v3a</string>
+	<string>Stage1v4</string>
 	<key>PayloadIdentifier</key>
 	<string>.534DBBEE-1C33-46A4-BF17-52689C4E1310</string>
 	<key>PayloadOrganization</key>
