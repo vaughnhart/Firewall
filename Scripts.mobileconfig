@@ -270,6 +270,8 @@
 	<string>.8F027D32-816D-4AE7-8565-C1B63B0295C3</string>
 	<key>PayloadOrganization</key>
 	<string>AegiS IT, LLC</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>

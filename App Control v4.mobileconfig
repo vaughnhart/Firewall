@@ -71,6 +71,8 @@
 	<string>.49B77C66-FB46-4C64-9DC1-0EAF99AE010D</string>
 	<key>PayloadOrganization</key>
 	<string>Aegis IT, LLC</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>
