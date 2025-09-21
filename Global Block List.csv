@@ -1,4 +1,5 @@
 id,destination,type,comment,createdAt
+34,facebook.com,domain,,2025-09-18 21:02:55
 157,twitter.com,domain,,2024-12-12 19:16:35
 263,tumblr.com,domain,,2024-12-12 19:16:35
 707,qq.com,domain,,2024-12-12 19:16:35
@@ -30,6 +31,7 @@ id,destination,type,comment,createdAt
 11817,adition.com,domain,,2024-12-12 19:16:35
 11925,scorecardresearch.com,domain,,2024-12-12 19:16:35
 11931,criteo.com,domain,,2024-12-12 19:16:35
+12031,facebook.net,domain,,2025-09-18 21:02:55
 12267,rr.com,domain,,2024-12-12 19:16:35
 14122,adnxs.com,domain,,2024-12-12 19:16:35
 14987,mediaplex.com,domain,,2024-12-12 19:16:35
@@ -49,6 +51,7 @@ id,destination,type,comment,createdAt
 28984,opera.com,domain,,2025-07-06 18:10:53
 29277,sprintpcs.com,domain,,2024-12-12 19:16:35
 29983,att.com,domain,,2024-12-12 19:16:35
+30060,fb.com,domain,,2025-09-18 21:03:42
 31142,adtechus.com,domain,,2024-12-12 19:16:35
 31425,yandex.ru,domain,,2024-12-12 19:16:35
 34957,tubemogul.com,domain,,2024-12-12 19:16:35
@@ -68,6 +71,8 @@ id,destination,type,comment,createdAt
 45988,disqus.com,domain,,2024-12-12 19:16:36
 45990,gravatar.com,domain,,2024-12-12 19:16:36
 46374,blogblog.com,domain,,2024-12-12 19:16:36
+46405,meta.com,domain,,2025-09-18 21:03:42
+46446,fbcdn.com,domain,,2025-09-18 21:04:31
 46761,html.it,domain,,2024-12-12 19:16:36
 49795,technoratimedia.com,domain,,2024-12-12 19:16:36
 50162,dotomi.com,domain,,2024-12-12 19:16:36
@@ -88,6 +93,7 @@ id,destination,type,comment,createdAt
 85385,liveinternet.ru,domain,,2024-12-12 19:16:36
 86176,amung.us,domain,,2024-12-12 19:16:36
 87721,desiringgod.org,domain,,2024-12-12 19:16:36
+87930,facebookmail.com,domain,,2025-09-18 21:03:42
 89157,trafficjunky.com,domain,,2025-09-16 17:01:17
 89507,lduhtrp.net,domain,,2024-12-12 19:16:36
 89901,bkrtx.com,domain,,2024-12-12 19:16:36
@@ -113,6 +119,7 @@ id,destination,type,comment,createdAt
 197775,33across.com,domain,,2024-12-12 19:16:37
 202135,proxz.com,domain,,2024-12-12 19:16:37
 206874,jumptap.com,domain,,2024-12-12 19:16:37
+212729,fb.me,domain,,2025-09-18 21:05:24
 224164,appspot.com,domain,,2024-12-12 19:16:37
 226842,wonderwall.com,domain,,2024-12-12 19:16:37
 228039,salemwebnetwork.com,domain,,2024-12-12 19:16:37
