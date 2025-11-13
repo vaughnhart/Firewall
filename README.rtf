@@ -814,6 +814,10 @@ Extensions V2 mobileconfig added the developer ID for Duo Security, LLC.
 Changelog 10/22/25
 App Control v5a mobileconfig is now blocking applications from loading from /tmp/ and it’s linked folder /private/tmp/… which could hinder OS updates… but we shall see.
 
+Changelog 11/13/25
+Created new pf rules filtering lo0 traffic. Pf.umb which doesn’t allow tunneling in lo0 and pf.conf.umb which does allow l0 tunneling for Cisco Umbrella and port 5353 for mDNS within Umbrella (for multicast). 
+Using a new tcpdump command taking advantage of the PKTAP feature in Mac OS that captures metadata for processes with network connections: sudo tcpdump -i pktap,all -s0 -c 1100 -AeHnnttttvvv -w test.pcap
+
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
@@ -825,6 +829,7 @@ https://www.icloud.com/iclouddrive/0Si4df9qaPgUT9KzgqsroSIcw#MurusVallum
 
 command  line quicksheet
 sudo tcpdump -i en0 -s0 -c 1100 -AeHnnttttvvv -w test.pcap
+sudo tcpdump -i pktap,all -s0 -c 1100 -AeHnnttttvvv -w test.pcap
 sudo lsof -i -n -P 
 netstat -arn
 arp -an
@@ -834,5 +839,8 @@ sudo launchctl config user umask 077
 sudo log collect --output ~/Desktop/SystemLogs.logarchive --last 20m
 grep -w 'console' /private/etc/ttys
 sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE
+sudo ifconfig pflog0 create
+sudo tcpdump -n -e -ttt -i pflog0
+
 
 In console search for it.murus.Vallum.AFW to see running log
