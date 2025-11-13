@@ -1,5 +1,4 @@
 id,destination,type,comment,createdAt
-34,facebook.com,domain,,2025-05-05 20:59:34
 304,dropbox.com,domain,,2024-12-12 19:15:08
 425,skype.com,domain,,2025-01-14 21:33:33
 570,live.com,domain,,2024-12-12 19:15:08
@@ -7,14 +6,15 @@ id,destination,type,comment,createdAt
 5308,account.live.com,domain,,2024-12-12 19:15:08
 10185,youtu.be,domain,,2024-12-12 19:15:08
 10439,docs.google.com,domain,,2024-12-12 19:15:08
-12031,facebook.net,domain,,2025-05-05 20:59:34
 12271,archive.org,domain,,2024-12-12 19:15:08
 12356,chess.com,domain,,2024-12-12 19:15:08
 15046,livefilestore.com,domain,,2024-12-12 19:15:08
 23766,auth.blu.livefilestore.com,domain,,2024-12-12 19:15:08
+30058,cisco.com,domain,,2025-10-30 15:09:07
 50757,bluehost.com,domain,,2025-05-05 19:46:17
 54980,storage.live.com,domain,,2024-12-12 19:15:08
 60582,github.com,domain,,2024-12-12 19:15:08
+66484,citi.com,domain,,2025-10-30 15:09:07
 69187,voice.google.com,domain,,2024-12-12 19:15:08
 117254,office.com,domain,,2024-12-12 19:15:08
 117611,starbucks.com,domain,,2025-04-27 08:03:19
@@ -174,6 +174,7 @@ id,destination,type,comment,createdAt
 83631714,animecrush.net,domain,,2025-06-06 19:15:01
 83997499,videostr.net,domain,,2025-09-14 22:03:17
 84351197,megacloudforest.xyz,domain,,2025-08-25 13:01:41
+84371194,akmzed.cloud,domain,,2025-11-10 20:04:45
 84491740,robosoc.io,domain,,2025-07-13 14:40:24
 84491741,cloudcix.com,domain,,2025-07-13 14:40:24
 84800966,watchseries-bar.lol,domain,,2025-08-19 18:44:46
@@ -181,3 +182,5 @@ id,destination,type,comment,createdAt
 84911897,tube-dl.top,domain,,2025-09-21 15:20:29
 84911922,jpg4.top,domain,,2025-09-21 16:18:02
 85001809,fqjpg5.top,domain,,2025-09-21 16:16:51
+85301329,rainflare53.pro,domain,,2025-10-10 19:40:46
+85301339,hailmist36.pro,domain,,2025-10-10 19:43:54

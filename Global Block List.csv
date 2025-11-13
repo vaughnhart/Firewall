@@ -121,7 +121,6 @@ id,destination,type,comment,createdAt
 202135,proxz.com,domain,,2024-12-12 19:16:37
 206874,jumptap.com,domain,,2024-12-12 19:16:37
 212729,fb.me,domain,,2025-09-18 21:05:24
-224164,appspot.com,domain,,2024-12-12 19:16:37
 226842,wonderwall.com,domain,,2024-12-12 19:16:37
 228039,salemwebnetwork.com,domain,,2024-12-12 19:16:37
 248431,pixel,domain,,2024-12-12 19:16:37
@@ -135,6 +134,7 @@ id,destination,type,comment,createdAt
 453690,mixpanel.com,domain,,2024-12-12 19:16:37
 461508,bitsontherun.com,domain,,2024-12-12 19:16:37
 720116,barefruit.co.uk,domain,,2024-12-12 19:16:37
+825312,global.com,domain,,2025-11-08 18:40:37
 1027287,parklogic.com,domain,,2024-12-12 19:16:37
 1476932,clicktale.net,domain,,2024-12-12 19:16:37
 1957586,creative-serving.com,domain,,2024-12-12 19:16:37
@@ -195,7 +195,7 @@ id,destination,type,comment,createdAt
 4253271,popads.com,domain,,2024-12-12 19:16:38
 4331161,tapad.com,domain,,2024-12-12 19:16:38
 4351391,servebom.com,domain,,2024-12-12 19:16:38
-4383241,googletagmanager.com,domain,,2024-12-12 19:16:38
+4383241,googletagmanager.com,domain,,2025-10-06 16:22:08
 4389689,moatads.com,domain,,2024-12-12 19:16:38
 4403041,smartclip.net,domain,,2024-12-12 19:16:38
 4412747,vungle.com,domain,,2024-12-12 19:16:38
@@ -224,10 +224,12 @@ id,destination,type,comment,createdAt
 4828584,impdesk.com,domain,,2024-12-12 19:16:39
 4834366,videohub.tv,domain,,2024-12-12 19:16:39
 5302121,ttgtmedia.com,domain,,2024-12-12 19:16:39
+5659501,mobilefuse.com,domain,,2025-11-11 18:41:00
 5695879,tune.com,domain,,2024-12-12 19:16:39
 6191115,qlik.com,domain,,2024-12-12 19:16:39
 7336777,yieldmo.com,domain,,2024-12-12 19:16:39
 7701223,petametrics.com,domain,,2024-12-12 19:16:39
+8435713,rtbhouse.com,domain,,2025-10-19 19:34:51
 9162365,adrta.com,domain,,2024-12-12 19:16:39
 9417439,api.whatsapp.com,domain,,2024-12-12 19:16:39
 9884833,kiosked.com,domain,,2024-12-12 19:16:39
@@ -257,7 +259,7 @@ id,destination,type,comment,createdAt
 12960711,blismedia.com,domain,,2024-12-12 19:16:39
 12961013,admantx.com,domain,,2024-12-12 19:16:39
 12961083,bidtellect.com,domain,,2025-03-26 20:39:42
-13702425,gvt1.com,domain,,2024-12-12 19:16:39
+13702425,gvt1.com,domain,,2025-10-06 16:22:09
 13868916,springserve.com,domain,,2024-12-12 19:16:40
 13927266,narvar.com,domain,,2025-07-23 21:40:58
 14127468,jsonip.com,domain,,2024-12-12 19:16:40
@@ -266,7 +268,7 @@ id,destination,type,comment,createdAt
 14955801,forter.com,domain,,2024-12-12 19:16:40
 15117873,fqtag.com,domain,,2024-12-12 19:16:40
 15206483,gstaticadssl.l.google.com,domain,,2024-12-12 19:16:40
-15310721,gvt2.com,domain,,2024-12-12 19:16:40
+15310721,gvt2.com,domain,,2025-10-06 16:22:09
 15719413,socdm.com,domain,,2024-12-12 19:16:40
 15840601,admedo.com,domain,,2024-12-12 19:16:40
 16114557,rtk.io,domain,,2024-12-12 19:16:40
@@ -279,6 +281,7 @@ id,destination,type,comment,createdAt
 17768633,jampp.com,domain,,2024-12-12 19:16:40
 18451419,keywee.co,domain,,2024-12-12 19:16:40
 18485769,lkqd.net,domain,,2024-12-12 19:16:40
+18776165,nuimedia.com,domain,,2025-11-13 19:03:28
 19005683,adtdp.com,domain,,2024-12-12 19:16:40
 19005783,connatix.com,domain,,2025-03-26 20:16:11
 19005829,ezoic.net,domain,,2024-12-12 19:16:40
@@ -294,8 +297,9 @@ id,destination,type,comment,createdAt
 19670592,mantisadnetwork.com,domain,,2024-12-12 19:16:40
 19710040,destination,domain,,2024-12-12 19:16:34
 19871794,9mediaonline.com,domain,,2024-12-12 19:16:40
-20357145,safebrowsing.googleapis.com,domain,,2024-12-12 19:16:40
+20357145,safebrowsing.googleapis.com,domain,,2025-10-06 16:27:55
 20459855,adkernel.com,domain,,2024-12-12 19:16:40
+20597573,publift.com,domain,,2025-10-15 18:46:17
 20787327,1rx.io,domain,,2024-12-12 19:16:40
 20852935,idio.co,domain,,2024-12-12 19:16:40
 20853821,pixel.ad,domain,,2024-12-12 19:16:40
@@ -321,7 +325,6 @@ id,destination,type,comment,createdAt
 23108981,img.huffingtonpost.com,domain,,2024-12-12 19:16:43
 23170645,mediavine.com,domain,,2024-12-12 19:16:43
 23551337,trkn.us,domain,,2024-12-12 19:16:43
-23698259,6sc.co,domain,,2024-12-12 19:16:43
 24124915,ads-fa.cdn.spotify.com,domain,,2024-12-12 19:16:43
 24168241,adotmob.com,domain,,2024-12-12 19:16:43
 24201367,minute.ly,domain,,2025-05-22 21:46:19
@@ -353,6 +356,7 @@ id,destination,type,comment,createdAt
 28135408,comscore,domain,,2024-12-12 19:16:43
 28434482,rxthdr.com,domain,,2024-12-12 19:16:43
 28542103,smrt.as,domain,,2024-12-12 19:16:43
+28762591,hashicorp.com,domain,,2025-11-04 21:19:06
 28799769,16clouds.com,domain,,2024-12-12 19:16:43
 28936987,remarketingpixel.com,domain,,2024-12-12 19:16:43
 28958093,zwizzarmyknife.com,domain,,2024-12-12 19:16:43
@@ -363,6 +367,7 @@ id,destination,type,comment,createdAt
 29261049,aanqylta.com,domain,,2024-12-12 19:16:43
 29352516,chimpstatic.com,domain,,2024-12-12 19:16:43
 29371228,adservice.google.co.uk,domain,,2024-12-12 19:16:43
+29378428,pokkt.com,domain,,2025-10-17 20:02:37
 29389396,musthird.com,domain,,2024-12-12 19:16:43
 29393158,monu.delivery,domain,,2024-12-12 19:16:43
 29520352,cloudfunctions.net,domain,,2024-12-12 19:16:43
@@ -528,6 +533,7 @@ id,destination,type,comment,createdAt
 58297499,snigel.com,domain,,2025-03-27 14:56:48
 58442877,sizebay.technology,domain,,2024-12-12 19:16:47
 58686483,aditude.io,domain,,2025-03-26 20:30:20
+58687557,adtonos.com,domain,,2025-11-04 21:17:45
 58770748,235grand.com,domain,,2024-12-12 19:16:47
 59670338,fullthrottle.ai,domain,,2025-04-07 14:09:06
 59715254,mask-api.icloud.com,domain,,2024-12-12 19:16:47
@@ -542,6 +548,7 @@ id,destination,type,comment,createdAt
 63867939,viously.com,domain,,2025-04-10 18:46:22
 64102550,minutemedia.com,domain,,2025-06-24 22:26:43
 64102685,adaptmx.com,domain,,2025-05-15 21:01:46
+64102814,marketingarchitects.com,domain,,2025-10-25 22:15:37
 64103700,ozoneproject.com,domain,,2025-03-26 20:41:16
 64110194,mantis-intelligence.com,domain,,2025-03-27 14:56:00
 64117221,pressboardmedia.com,domain,,2025-03-27 14:43:00
@@ -562,6 +569,7 @@ id,destination,type,comment,createdAt
 66805667,voiceflow.com,domain,,2025-05-12 20:05:38
 67469892,googleechotest.com,domain,,2024-12-12 19:16:47
 68493471,stnvideo.com,domain,,2025-03-27 14:40:38
+68645922,zipy.ai,domain,,2025-10-17 20:01:34
 69671537,raptive.com,domain,,2025-03-27 15:06:18
 70255395,linksprf.com,domain,,2025-07-23 21:38:19
 70437563,rixengine.com,domain,,2025-07-06 15:33:31
@@ -573,8 +581,11 @@ id,destination,type,comment,createdAt
 76079634,successcuff.com,domain,,2024-12-12 19:16:47
 78816327,iion.io,domain,,2025-07-23 21:39:09
 79203772,appsgenaiserver-pa.googleapis.com,domain,,2025-02-21 04:03:09
+79665154,admaster.cc,domain,,2025-10-30 15:00:18
+79759727,monetixads.com,domain,,2025-11-11 18:40:16
 80708436,corporate.viously.com,domain,,2025-04-10 18:52:39
 81258393,ops.co,domain,,2025-03-27 14:43:49
+82464506,copper6.com,domain,,2025-10-30 15:01:03
 82638394,appsgenaiserver-pa.clients6.google.com,domain,,2025-02-21 04:01:51
 83082042,network-n.com,domain,,2025-03-26 20:13:53
 83082216,aim.loc.kr,domain,,2025-03-26 20:44:49
@@ -587,9 +598,11 @@ id,destination,type,comment,createdAt
 83646922,ads.trafficircles.com,domain,,2025-05-04 19:19:41
 83891710,nextmillennium.com,domain,,2025-05-29 18:52:13
 83924687,vibe.co,domain,,2025-08-01 17:43:28
+84028709,adforge.io,domain,,2025-11-13 19:02:44
 84054281,yourbow.com,domain,,2025-09-16 16:59:43
 84328838,attekmi.com,domain,,2025-06-22 15:59:56
 84350597,jasmin.ai,domain,,2025-06-24 22:27:59
+84556701,berryapp.io,domain,,2025-10-17 20:02:02
 84581942,partnermatic.com,domain,,2025-07-23 21:37:30
 84649666,purplepublish.com,domain,,2025-08-03 16:50:43
 84649670,www.purplepublish.com,domain,,2025-08-03 16:55:19
