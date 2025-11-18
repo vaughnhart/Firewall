@@ -818,6 +818,9 @@ Changelog 11/13/25
 Created new pf rules filtering lo0 traffic. Pf.umb which doesn’t allow tunneling in lo0 and pf.conf.umb which does allow l0 tunneling for Cisco Umbrella and port 5353 for mDNS within Umbrella (for multicast). 
 Using a new tcpdump command taking advantage of the PKTAP feature in Mac OS that captures metadata for processes with network connections: sudo tcpdump -i pktap,all -s0 -c 1100 -AeHnnttttvvv -w test.pcap
 
+Changelog 11/18/25
+Basically upload some test pf.conf configurations but am running pf.conf.inbound just remove the .inbound… this is basically open but has logging enabled. It has some inbound restrictions. 
+
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
