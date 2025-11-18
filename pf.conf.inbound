@@ -22,7 +22,7 @@ anchor "cisco.anyconnect.vpn"
 anchor "com.apple/*"
 load anchor "com.apple" from "/etc/pf.anchors/com.apple"
 
-antispoof log for self
+#antispoof log for self
 block in log quick from no-route to any
 block in log quick from urpf-failed to any
 block in log quick on self from any to 255.255.255.255
