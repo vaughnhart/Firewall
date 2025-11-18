@@ -1,0 +1,49 @@
+#
+#
+#
+# Tables
+table <bad_actors> persist file "/etc/bad_actors.txt"
+table <abusers1d> const file "/etc/firehol_abusers_1d.netset"
+table <level2> const file "/etc/firehol_level2.netset"
+table <level3> const file "/etc/firehol_level3.netset"
+table <webclient> const file "/etc/firehol_webclient.netset"
+table <csix> file "/etc/ipblocklist.txt"
+#
+# Options
+set block-policy drop
+set fingerprints "/etc/pf.os"
+set ruleset-optimization basic
+set limit { tables 10000, table-entries 400000 }
+set skip on lo0
+#set syncookies adaptive # Enable only if under SYN flood attack
+#
+# Scrubbing (Normalization)
+scrub in all no-df
+scrub-anchor "cisco.anyconnect.vpn"
+scrub-anchor "com.apple/*"
+#
+# Anchors
+nat-anchor "com.apple/*"
+rdr-anchor "com.apple/*"
+dummynet-anchor "com.apple/*"
+anchor "cisco.anyconnect.vpn"
+anchor "com.apple/*"
+load anchor "com.apple" from "/etc/pf.anchors/com.apple"
+#
+# Inbound 
+#antispoof log for self
+block in log quick from no-route to any
+block in log quick from urpf-failed to any
+block in log quick on self from any to 255.255.255.255
+#
+# Block traffic from known bad actors (using tables)
+block in log quick on self from <bad_actors> to any
+block in log quick on self from <abusers1d> to any
+block in log quick on self from <level2> to any
+block in log quick on self from <level3> to any
+block in log quick on self from <webclient> to any
+block in log quick on self from <csix> to any
+#
+# Pass Outbound
+pass out log all keep state
+
