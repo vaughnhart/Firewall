@@ -19,6 +19,7 @@ set skip on lo0
 #
 # Scrubbing (Normalization)
 scrub in all no-df
+scrub all reassemble tcp
 scrub-anchor "cisco.anyconnect.vpn"
 scrub-anchor "com.apple/*"
 #
