@@ -32,6 +32,7 @@ anchor "com.apple/*"
 load anchor "com.apple" from "/etc/pf.anchors/com.apple"
 #
 # Inbound 
+pass in log all keep state
 #antispoof log for self
 block in log quick from no-route to any
 block in log quick from urpf-failed to any
