@@ -47,10 +47,10 @@ block in log quick on self from <webclient> to any
 block in log quick on self from <csix> to any
 #
 # Block specific services (inbound)
-block in log proto tcp to any port { 548, 20, 21, 80, 143, 993, 110, 995, 3031, 5900, 25, 23, 3689, 540, 49152} #AFP, FTP, HTTP, IMAP/S, POP3/S, Remote Apple Events, Screen Sharing, SMTP, Telnet, iTunes Sharing, UUCP, Optical Drive Sharing
-block log proto { tcp, udp } to any port { 139, 445, 137, 138, 69 } # SMB, TFTP
-block log proto udp to any port {1900, 5353} #Bonjour SSDP, mDNSResponder
-block log proto tcp to any port {79, 2049} #Finger, NFSblock in log proto icmp # ICMP
+block in log quick proto tcp to any port { 548, 20, 21, 80, 143, 993, 110, 995, 3031, 5900, 25, 23, 3689, 540, 49152} #AFP, FTP, HTTP, IMAP/S, POP3/S, Remote Apple Events, Screen Sharing, SMTP, Telnet, iTunes Sharing, UUCP, Optical Drive Sharing
+block log quick proto { tcp, udp } to any port { 139, 445, 137, 138, 69 } # SMB, TFTP
+block log quick proto udp to any port {1900, 5353} #Bonjour SSDP, mDNSResponder
+block log quick proto tcp to any port {79, 2049} #Finger, NFSblock in log proto icmp # ICMP
 #
 # Allow DHCP
 pass in inet proto udp from port 67 to port 68
