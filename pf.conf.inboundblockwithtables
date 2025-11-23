@@ -56,6 +56,9 @@ block log quick proto tcp to any port {79, 2049} #Finger, NFSblock in log proto 
 pass in inet proto udp from port 67 to port 68
 pass in inet6 proto udp from port 547 to port 546
 #
+# Block traffic from unknown OS (fingerprinting)
+block out from any os "unknown"
+#
 # Pass Outbound
 pass out log all keep state
 
