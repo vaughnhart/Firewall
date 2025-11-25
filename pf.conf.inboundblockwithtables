@@ -14,6 +14,7 @@ set block-policy drop
 set fingerprints "/etc/pf.os"
 set ruleset-optimization basic
 set limit { tables 10000, table-entries 400000 }
+set state-policy if-bound
 set skip on lo0
 #set syncookies adaptive # Enable only if under SYN flood attack
 #
