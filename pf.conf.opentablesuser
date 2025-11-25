@@ -61,5 +61,5 @@ block out from any os "unknown"
 #
 # Pass Outbound
 block out log all
-pass out log all user { 0, 501 }
+pass out log all user { 0, 501 } keep state
 
