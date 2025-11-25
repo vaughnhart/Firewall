@@ -39,7 +39,6 @@ block in log quick from no-route to any
 block in log quick from urpf-failed to any
 block in log quick on self from any to 255.255.255.255
 block in log quick proto { tcp , udp } from  any to any port 0
-# Block traffic from known bad actors (using tables)
 block in log quick on self from <bad_actors> to any
 block in log quick on self from <abusers1d> to any
 block in log quick on self from <level2> to any
@@ -54,8 +53,8 @@ block log quick proto udp to any port {1900, 5353} #Bonjour SSDP, mDNSResponder
 block log quick proto tcp to any port {79, 2049} #Finger, NFSblock in log proto icmp # ICMP
 #
 # Allow DHCP
-pass in inet proto udp from port 67 to port 68
-pass in inet6 proto udp from port 547 to port 546
+#pass in inet proto udp from port 67 to port 68
+#pass in inet6 proto udp from port 547 to port 546
 #
 # Block traffic from unknown OS (fingerprinting)
 block out from any os "unknown"
