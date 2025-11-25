@@ -18,7 +18,7 @@ set skip on lo0
 #set syncookies adaptive # Enable only if under SYN flood attack
 #
 # Scrubbing (Normalization)
-scrub in all no-df
+scrub in all no-df random-id
 scrub all reassemble tcp
 scrub-anchor "cisco.anyconnect.vpn"
 scrub-anchor "com.apple/*"
