@@ -852,6 +852,8 @@ grep -w 'console' /private/etc/ttys
 sudo defaults write /Library/Preferences/com.apple.loginwindow EnableMCXLoginScripts -bool TRUE
 sudo ifconfig pflog0 create
 sudo tcpdump -n -e -ttt -i pflog0
+sudo tcpdump -AeHnnttttvvv -i pktap,all
+sudo tcpdump -n -e -tttvvv -i pktap,all
 
 
 In console search for it.murus.Vallum.AFW to see running log
