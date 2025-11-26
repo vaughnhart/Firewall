@@ -828,7 +828,7 @@ Changelog 11/25/25
 After some review… I decided to add some old rules I had played around with in the past… while allowing inbound traffic and letting the block in rules do the work with the caveat that pf filtering is less dynamic with the if-bound option and the the pass out log user { 0, 501 } rules which only allow communication by root and the userid for the main account. If you are sharing a machine with multiple users you will need to add the userid for each person or the group to which all members belong. You can do this by using the id command on the command line. The rule is superseded by a block out log all that prevents all outbound communication. You can fine tune this by running ps -Afx to see which programs are communicating and their respective userids. I also enabled the block in on self rule which covers spoofing for all adapters but it may conflict with the no-route and urfp-failed rule which will cause pf to drop one or both of them.  There is also a new rule blocking inbound communication to port 0 which I have seen in the past.  It’s a developer port (you can look it up) that sometimes is used for DNCP communication but for all other uses it’s not regular.  DHCP 169 to 255 on port 0 looking for a DHCP server. The latest rule is called pf.conf.opentablesuser. 
 
 Changelog 11/26/25
-I added (user) logging to the pf.conf.opentablesuser rules… and I am trying to find the captive portal process user IDs as this isn’t running under root and Levi’s. I tried _captiveagent (278) and that didn’t do it. Still digging. 
+I added (user) logging to the pf.conf.opentablesuser rules… and I am trying to find the captive portal process user IDs as this isn’t running under root and Levi’s. I tried _captiveagent (258) and that didn’t do it. Still digging. 
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
@@ -854,6 +854,7 @@ sudo ifconfig pflog0 create
 sudo tcpdump -n -e -ttt -i pflog0
 sudo tcpdump -AeHnnttttvvv -i pktap,all
 sudo tcpdump -n -e -tttvvv -i pktap,all
-
+sudo tcpdump -k -eHntv -i pflog0
+sudo tcpdump -k -eHntv -i pktap,all
 
 In console search for it.murus.Vallum.AFW to see running log
