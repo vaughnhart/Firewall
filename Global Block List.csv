@@ -516,6 +516,7 @@ id,destination,type,comment,createdAt
 55825977,doh.dns.apple.com,domain,,2024-12-12 19:16:47
 56125237,c.la2-c1-ord.salesforceliveagent.com,domain,,2024-12-12 19:16:47
 56483224,perf-serving.com,domain,,2024-12-12 19:16:47
+56489575,global-e.com,domain,,2025-11-25 18:03:34
 56537445,comm100.io,domain,,2024-12-12 19:16:47
 56545696,swncdn.com,domain,,2024-12-12 19:16:47
 56885249,quickkoala.io,domain,,2024-12-12 19:16:47
@@ -610,3 +611,4 @@ id,destination,type,comment,createdAt
 84649670,www.purplepublish.com,domain,,2025-08-03 16:55:19
 84735296,remoby.com,domain,,2025-08-11 22:20:55
 84778401,curationmedia.net,domain,,2025-08-17 12:37:42
+85506474,adfinitys.com,domain,,2025-11-27 18:51:22
