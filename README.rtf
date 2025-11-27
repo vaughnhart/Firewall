@@ -39,7 +39,7 @@ Added https://iplists.firehol.org/files/cruzit_web_attacks.ipset - CruzIT Web At
 Updated DYNDNS Pomcounp lists in Murus and added to Vallum.
 Added https://iplists.firehol.org/files/sslproxies_30d.ipset - SSL Proxies.
 
-]changelog - 1/15/23
+Changelog - 1/15/23
 Removed VoIPBL list as it has errors on Firehouse site.
 Updated nations databases in Murus and Vallum
 Removed DYNDNS group from Murus rule
@@ -831,7 +831,7 @@ Changelog 11/26/25
 I added (user) logging to the pf.conf.opentablesuser rules… and I am trying to find the captive portal process user IDs as this isn’t running under root and Levi’s. I tried _captiveagent (258) and that didn’t do it. Still digging. 
 
 Changelog 11/27/25
-Allowing mdns on the inbound and outbound. 
+Allowing mdns on the inbound and outbound. Added the missing accounts userids… still testing… added igmp, imcp, ipv6-icmp
 
 Zelle me:  vaughn@aegisitnyc.com or 646-284-4291 or 347-559-1619
 If you have work reach out to me! 
@@ -859,5 +859,7 @@ sudo tcpdump -AeHnnttttvvv -i pktap,all
 sudo tcpdump -n -e -tttvvv -i pktap,all
 sudo tcpdump -k -eHntv -i pflog0
 sudo tcpdump -k -eHntv -i pktap,all
+sudo tcpdump -n -e -ttt -i pflog0 block out
+
 
 In console search for it.murus.Vallum.AFW to see running log
