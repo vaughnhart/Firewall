@@ -1,0 +1,64 @@
+#
+#
+#
+# Tables
+table <bad_actors> persist file "/etc/bad_actors.txt"
+table <abusers1d> const file "/etc/firehol_abusers_1d.netset"
+table <level2> const file "/etc/firehol_level2.netset"
+table <level3> const file "/etc/firehol_level3.netset"
+table <webclient> const file "/etc/firehol_webclient.netset"
+table <csix> file "/etc/ipblocklist.txt"
+#
+# Options
+set block-policy drop
+set fingerprints "/etc/pf.os"
+set ruleset-optimization basic
+set limit { tables 10000, table-entries 400000 }
+set state-policy if-bound
+set skip on lo0
+#set syncookies adaptive # Enable only if under SYN flood attack
+#
+# Scrubbing (Normalization)
+scrub in all no-df random-id
+scrub all reassemble tcp
+scrub-anchor "cisco.anyconnect.vpn"
+scrub-anchor "com.apple/*"
+#
+# Anchors
+nat-anchor "com.apple/*"
+rdr-anchor "com.apple/*"
+dummynet-anchor "com.apple/*"
+anchor "cisco.anyconnect.vpn"
+anchor "com.apple/*"
+load anchor "com.apple" from "/etc/pf.anchors/com.apple"
+#
+# Inbound 
+pass in log (user) all
+antispoof log for self
+block in log (user) quick from no-route to any
+block in log (user) quick from urpf-failed to any
+block in log (user) quick on self from any to 255.255.255.255
+block in log (user) quick proto { tcp , udp } from  any to any port 0
+block in log (user) quick on self from <bad_actors> to any
+block in log (user) quick on self from <abusers1d> to any
+block in log (user) quick on self from <level2> to any
+block in log (user) quick on self from <level3> to any
+block in log (user) quick on self from <webclient> to any
+block in log (user) quick on self from <csix> to any
+#
+# Block specific services (inbound)
+block in log (user) quick proto tcp to any port { 548, 20, 21, 80, 143, 993, 110, 995, 3031, 5900, 25, 23, 3689, 540, 49152} #AFP, FTP, HTTP, IMAP/S, POP3/S, Remote Apple Events, Screen Sharing, SMTP, Telnet, iTunes Sharing, UUCP, Optical Drive Sharing
+block log (user) quick proto { tcp, udp } to any port { 139, 445, 137, 138, 69 } # SMB, TFTP
+block log (user) quick proto udp to any port 1900 #Bonjour SSDP, mDNSResponder - port 5353 allowed 112725
+block log (user) quick proto tcp to any port {79, 2049} #Finger, NFSblock in log proto icmp # ICMP
+#
+# Allow DHCP
+#pass in inet proto udp from port 67 to port 68
+#pass in inet6 proto udp from port 547 to port 546
+#
+# Block traffic from unknown OS (fingerprinting)
+block out log (user) from any os "unknown"
+#
+# Pass Outbound
+block out log (user) all
+pass out log (user) all user { 0, 501 } keep state
