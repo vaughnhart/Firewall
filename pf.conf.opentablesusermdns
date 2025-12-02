@@ -55,6 +55,6 @@ block out log (user) from any os "unknown"
 #
 # Pass Outbound
 block out log (user) all
-pass out log (user) all user { 0, 24, 258, 200, 282, 205, 501 } keep state
+pass out log (user) all user { 0, 24, 258, 92, 200, 254, 266, 282, 205, 501 } keep state
 pass out log (user) proto { tcp, udp } from any port ntp to any port ntp keep state
 pass out log (user) proto { igmp, icmp, ipv6-icmp } from any to any keep state
