@@ -1,0 +1,63 @@
+#
+#
+#
+# Tables
+table <bad_actors> persist file "/etc/bad_actors.txt"
+table <abusers1d> const file "/etc/firehol_abusers_1d.netset"
+table <level2> const file "/etc/firehol_level2.netset"
+table <level3> const file "/etc/firehol_level3.netset"
+table <webclient> const file "/etc/firehol_webclient.netset"
+table <csix> file "/etc/ipblocklist.txt"
+table <Umbrella> file "/etc/Umbrella.txt"
+#
+# Options
+set block-policy drop
+set fingerprints "/etc/pf.os"
+set ruleset-optimization basic
+set optimization aggressive
+set limit { tables 10000, table-entries 400000 }
+set state-policy if-bound
+set skip on lo0
+#set syncookies adaptive # Enable only if under SYN flood attack
+#
+# Scrubbing (Normalization)
+scrub in all no-df random-id
+scrub all reassemble tcp
+scrub-anchor "cisco.anyconnect.vpn"
+scrub-anchor "com.apple/*"
+#
+# Anchors
+nat-anchor "com.apple/*"
+rdr-anchor "com.apple/*"
+dummynet-anchor "com.apple/*"
+anchor "cisco.anyconnect.vpn"
+anchor "com.apple/*"
+load anchor "com.apple" from "/etc/pf.anchors/com.apple"
+#
+# Inbound 
+pass in log (user) all
+antispoof log for self
+block in log (user) quick from no-route to any
+block in log (user) quick from urpf-failed to any
+block in log (user) quick on self from any to 255.255.255.255
+block in log (user) quick proto { tcp , udp } from  any to any port 0
+block in log (user) quick on self from <bad_actors> to any
+block in log (user) quick on self from <abusers1d> to any
+block in log (user) quick on self from <level2> to any
+block in log (user) quick on self from <level3> to any
+block in log (user) quick on self from <webclient> to any
+block in log (user) quick on self from <csix> to any
+block in log (user) quick proto tcp to any port { 548, 20, 21, 80, 143, 993, 110, 995, 3031, 5900, 25, 23, 3689, 540, 49152}
+block log (user) quick proto { tcp, udp } to any port { 139, 445, 137, 138, 69 }
+block log (user) quick proto udp to any port 1900
+block log (user) quick proto tcp to any port {79, 2049}
+#
+# Block traffic from unknown OS (fingerprinting)
+block out log (user) from any os "unknown"
+#
+# Pass Outbound
+block out log (user) all
+pass out log (user) all user { 0, 24, 258, 92, 200, 254, 266, 282, 205, 501 } keep state
+pass out log (user) proto { tcp, udp } from any port ntp to any port ntp keep state
+pass out log (user) proto { igmp, icmp, ipv6-icmp } from any to any keep state
+pass out log (user) from any to <Umbrella> keep state
