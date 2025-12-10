@@ -48,9 +48,6 @@ block in log (user) quick on self from <level3> to any
 block in log (user) quick on self from <webclient> to any
 block in log (user) quick on self from <csix> to any
 block in log (user) quick proto tcp to any port { 548, 20, 21, 80, 143, 993, 110, 995, 3031, 5900, 25, 23, 3689, 540, 49152}
-block log (user) quick proto { tcp, udp } to any port { 139, 445, 137, 138, 69 }
-block log (user) quick proto udp to any port 1900
-block log (user) quick proto tcp to any port {79, 2049}
 #
 # Block traffic from unknown OS (fingerprinting)
 block out log (user) from any os "unknown"
@@ -61,3 +58,6 @@ pass out log (user) all user { 0, 88, 65, 24, 258, 92, 200, 254, 266, 282, 205, 
 pass out log (user) proto { tcp, udp } from any port ntp to any port ntp keep state
 pass out log (user) proto { igmp, icmp, ipv6-icmp } from any to any keep state
 pass out log (user) from any to <Umbrella> keep state
+block log (user) quick proto { tcp, udp } to any port { 139, 445, 137, 138, 69 }
+block log (user) quick proto udp to any port 1900
+block log (user) quick proto tcp to any port {79, 2049}
