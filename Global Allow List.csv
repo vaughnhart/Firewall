@@ -16,6 +16,7 @@ id,destination,type,comment,createdAt
 60582,github.com,domain,,2024-12-12 19:15:08
 66484,citi.com,domain,,2025-10-30 15:09:07
 69187,voice.google.com,domain,,2024-12-12 19:15:08
+81721,eff.org,domain,,2026-01-22 21:01:17
 117254,office.com,domain,,2024-12-12 19:15:08
 117611,starbucks.com,domain,,2025-04-27 08:03:19
 119207,meraki.com,domain,,2024-12-12 19:15:08
@@ -34,6 +35,7 @@ id,destination,type,comment,createdAt
 4150961,statici.icloud.com,domain,,2024-12-12 19:15:09
 4500124,feedbackws.icloud.com,domain,,2024-12-12 19:15:09
 4518545,sfx.ms,domain,,2024-12-12 19:15:09
+4566710,luxuretv.com,domain,,2025-11-30 13:58:48
 4739255,my.justhost.com,domain,,2025-04-27 08:00:45
 4778469,dropboxstatic.com,domain,,2024-12-12 19:15:09
 4975259,ypncdn.com,domain,,2024-12-12 19:15:09
@@ -60,7 +62,6 @@ id,destination,type,comment,createdAt
 21743177,p28-content.icloud.com,domain,,2024-12-12 19:15:10
 22173850,p40-content.icloud.com,domain,,2024-12-12 19:15:10
 22216030,p44-content.icloud.com,domain,,2024-12-12 19:15:10
-23092299,85po.com,domain,,2025-09-14 09:36:05
 23187229,p43-content.icloud.com,domain,,2024-12-12 19:15:10
 26124358,auth-blu.files.1drv.com,domain,,2024-12-12 19:15:10
 26365700,maps.app.goo.gl,domain,,2024-12-26 04:47:51
@@ -178,9 +179,5 @@ id,destination,type,comment,createdAt
 84491740,robosoc.io,domain,,2025-07-13 14:40:24
 84491741,cloudcix.com,domain,,2025-07-13 14:40:24
 84800966,watchseries-bar.lol,domain,,2025-08-19 18:44:46
-84911895,4jpg.top,domain,,2025-09-21 16:14:53
-84911897,tube-dl.top,domain,,2025-09-21 15:20:29
-84911922,jpg4.top,domain,,2025-09-21 16:18:02
-85001809,fqjpg5.top,domain,,2025-09-21 16:16:51
 85301329,rainflare53.pro,domain,,2025-10-10 19:40:46
 85301339,hailmist36.pro,domain,,2025-10-10 19:43:54
